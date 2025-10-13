@@ -1,57 +1,80 @@
 import { router, publicProcedure, protectedProcedure } from '../trpc'
 import { z } from 'zod'
 import { TRPCError } from '@trpc/server'
+import { authService } from '@/lib/services/auth.service'
+
+const signInSchema = z.object({
+  email: z.string().email('Valid email address is required'),
+  password: z.string().min(8, 'Password must be at least 8 characters'),
+})
+
+const signUpSchema = z.object({
+  email: z.string().email('Valid email address is required'),
+  password: z.string().min(8, 'Password must be at least 8 characters'),
+  confirmPassword: z.string().min(8, 'Password confirmation is required'),
+}).refine((data) => data.password === data.confirmPassword, {
+  message: "Passwords don't match",
+  path: ["confirmPassword"],
+})
 
 export const authRouter = router({
   getSession: publicProcedure
-    .input(z.object({
-      // Define input schema based on endpoint requirements
-    }))
-    .query(async ({ input, ctx }) => {
-      // Get current user session (standard auth endpoint)
+    .query(async ({ ctx }) => {
+      // Get current user session using auth service
+      const result = await authService.getCurrentUser()
       
-      return {
-        success: true,
-        data: null
+      if (!result.success) {
+        throw new TRPCError({
+          code: 'INTERNAL_SERVER_ERROR',
+          message: result.error?.message || 'Failed to get session'
+        })
       }
+      
+      return result.data
     }),
 
   signIn: publicProcedure
-    .input(z.object({
-      // Define input schema based on endpoint requirements
-    }))
-    .mutation(async ({ input, ctx }) => {
-      // Sign in with email and password (standard auth endpoint)
+    .input(signInSchema)
+    .mutation(async ({ input }) => {
+      const result = await authService.signIn(input)
       
-      return {
-        success: true,
-        data: null
+      if (!result.success) {
+        const errorCode = result.error?.code === 'INVALID_CREDENTIALS' ? 'UNAUTHORIZED' : 'BAD_REQUEST'
+        throw new TRPCError({
+          code: errorCode,
+          message: result.error?.message || 'Sign in failed'
+        })
       }
+      
+      return result.data
     }),
 
   signUp: publicProcedure
-    .input(z.object({
-      // Define input schema based on endpoint requirements
-    }))
-    .mutation(async ({ input, ctx }) => {
-      // Sign up with email and password (standard auth endpoint)
+    .input(signUpSchema)
+    .mutation(async ({ input }) => {
+      const result = await authService.signUp(input)
       
-      return {
-        success: true,
-        data: null
+      if (!result.success) {
+        throw new TRPCError({
+          code: 'BAD_REQUEST',
+          message: result.error?.message || 'Failed to create account'
+        })
       }
+      
+      return result.data
     }),
 
   signOut: protectedProcedure
-    .input(z.object({
-      // Define input schema based on endpoint requirements
-    }))
-    .mutation(async ({ input, ctx }) => {
-      // Sign out current user (standard auth endpoint)
+    .mutation(async () => {
+      const result = await authService.signOut()
       
-      return {
-        success: true,
-        data: null
+      if (!result.success) {
+        throw new TRPCError({
+          code: 'INTERNAL_SERVER_ERROR',
+          message: result.error?.message || 'Failed to sign out'
+        })
       }
+      
+      return result.data
     }),
 })

@@ -3,6 +3,14 @@
  * Auto-generated from requirements specification
  */
 
+// Re-export all entity types
+export * from './entities'
+export * from './enums'
+export * from './api'
+export * from './forms'
+export * from './utils'
+export * from './api-responses'
+
 // ============= APPLICATION TYPES =============
 
 export interface AppConfig {

@@ -1,0 +1,1362 @@
+2025-10-13T21:18:45.701Z [info] [ActionableInsightEngine] Loaded from database: { files: 200, functions: 1000, types: 1000 }
+2025-10-13T21:18:45.701Z [info] [ActionableInsightEngine] Built complete InsightContext with full file content
+2025-10-13T21:18:45.701Z [info] [InsightsAPI] Project context loaded: { filesCount: 200, functionsCount: 1000, dependenciesCount: 0 }
+2025-10-13T21:18:45.701Z [info] [InsightsAPI] Calling analyzeAndPlan...
+2025-10-13T21:18:45.702Z [info] [ActionableInsightEngine] Starting analyzeAndPlan with context: {
+  filesCount: 200,
+  functionsCount: 1000,
+  dependenciesCount: 0,
+  teamCapacity: 80
+}
+2025-10-13T21:18:45.702Z [info] [ActionableInsightEngine] Calling engine.generateInsights...
+2025-10-13T21:18:45.702Z [info] [InsightEngine] Starting generateInsights with 6 detectors
+2025-10-13T21:18:45.702Z [info] [InsightEngine] Project root detected: .
+2025-10-13T21:18:45.702Z [info] [FileValidator] Initialized with project root: .
+2025-10-13T21:18:45.703Z [info] [FileValidator] Initialized with 200 files, storing 600 path variations
+2025-10-13T21:18:45.703Z [info] [FileValidator] Sample paths: [
+  'components/ui/menubar.tsx',
+  '/var/task/components/ui/menubar.tsx',
+  'components/ui/input.tsx',
+  '/var/task/components/ui/input.tsx',
+  'components/ui/alert.tsx'
+]
+2025-10-13T21:18:45.703Z [info] [InsightEngine] Phase 1: Running 6 detectors...
+2025-10-13T21:18:45.703Z [info] [InsightEngine] Running detector 1: I
+2025-10-13T21:18:45.706Z [info] [InsightEngine] Running detector 2: P
+2025-10-13T21:18:45.736Z [info] [CodeClassifier] Classified 200 files:
+2025-10-13T21:18:45.736Z [info] Production: 64
+2025-10-13T21:18:45.736Z [info] Test: 125
+2025-10-13T21:18:45.736Z [info] Example: 5
+2025-10-13T21:18:45.736Z [info] Build: 0
+2025-10-13T21:18:45.736Z [info] Config: 6
+2025-10-13T21:18:45.736Z [info] Documentation: 0
+2025-10-13T21:18:45.766Z [info] [CodeClassifier] Classified 200 files:
+2025-10-13T21:18:45.766Z [info] Production: 64
+2025-10-13T21:18:45.766Z [info] Test: 125
+2025-10-13T21:18:45.766Z [info] Example: 5
+2025-10-13T21:18:45.766Z [info] Build: 0
+2025-10-13T21:18:45.766Z [info] Config: 6
+2025-10-13T21:18:45.766Z [info] Documentation: 0
+2025-10-13T21:18:45.766Z [info] [SmartSecurityAnalyzer] Analyzing 64 production files (skipping 136 non-production files)
+2025-10-13T21:18:45.766Z [info] [InsightEngine] Running detector 3: E
+2025-10-13T21:18:45.767Z [info] [GodObjectDetector] Skipping components/ui/menubar.tsx: UI component library with multiple related components
+2025-10-13T21:18:45.767Z [info] [GodObjectDetector] Skipping components/ui/input.tsx: UI component library with multiple related components
+2025-10-13T21:18:45.767Z [info] [GodObjectDetector] Skipping components/ui/alert.tsx: UI component library with multiple related components
+2025-10-13T21:18:45.767Z [info] [GodObjectDetector] Skipping components/ui/alert-dialog.tsx: UI component library with multiple related components
+2025-10-13T21:18:45.767Z [info] [GodObjectDetector] Skipping components/ui/accordion.tsx: UI component library with multiple related components
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/users/page.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/page.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/not-found.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/loading.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/layout.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/error.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/create-user/page.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/auth/register/page.tsx: nextjs framework convention
+2025-10-13T21:18:45.768Z [info] [GodObjectDetector] Skipping app/auth/login/page.tsx: nextjs framework convention
+2025-10-13T21:18:45.769Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.769Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.770Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.771Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.773Z [info] [GodObjectDetector] Flagging dashboard.tsx: 39 functions (threshold: 30)
+2025-10-13T21:18:45.773Z [info] [GodObjectDetector] Flagging intelligence-test.ts: 34 functions (threshold: 30)
+2025-10-13T21:18:45.773Z [info] [GodObjectDetector] Skipping types.ts: UI component library with multiple related components
+2025-10-13T21:18:45.773Z [info] [GodObjectDetector] Skipping plugin-manager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.774Z [info] [GodObjectDetector] Skipping file-generator.ts: UI component library with multiple related components
+2025-10-13T21:18:45.775Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.775Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.775Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.775Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.776Z [info] [GodObjectDetector] Flagging dashboard.tsx: 39 functions (threshold: 30)
+2025-10-13T21:18:45.777Z [info] [GodObjectDetector] Flagging intelligence-test.ts: 34 functions (threshold: 30)
+2025-10-13T21:18:45.777Z [info] [GodObjectDetector] Flagging health-predictor.ts: 47 functions (threshold: 30)
+2025-10-13T21:18:45.778Z [info] [GodObjectDetector] Flagging pattern-detector.ts: 55 functions (threshold: 30)
+2025-10-13T21:18:45.778Z [info] [GodObjectDetector] Flagging engine.ts: 112 functions (threshold: 30)
+2025-10-13T21:18:45.779Z [info] [GodObjectDetector] Flagging architecture-analyzer.ts: 65 functions (threshold: 30)
+2025-10-13T21:18:45.779Z [info] [GodObjectDetector] Flagging smell-detector.ts: 44 functions (threshold: 30)
+2025-10-13T21:18:45.780Z [info] [GodObjectDetector] Flagging typescript.ts: 68 functions (threshold: 30)
+2025-10-13T21:18:45.780Z [info] [GodObjectDetector] Skipping types.ts: UI component library with multiple related components
+2025-10-13T21:18:45.780Z [info] [GodObjectDetector] Skipping plugin-manager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.780Z [info] [GodObjectDetector] Skipping file-generator.ts: UI component library with multiple related components
+2025-10-13T21:18:45.781Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.781Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.781Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.782Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.783Z [info] [GodObjectDetector] Flagging dashboard.tsx: 39 functions (threshold: 30)
+2025-10-13T21:18:45.783Z [info] [GodObjectDetector] Flagging intelligence-test.ts: 34 functions (threshold: 30)
+2025-10-13T21:18:45.783Z [info] [GodObjectDetector] Flagging health-predictor.ts: 47 functions (threshold: 30)
+2025-10-13T21:18:45.784Z [info] [GodObjectDetector] Flagging pattern-detector.ts: 55 functions (threshold: 30)
+2025-10-13T21:18:45.784Z [info] [GodObjectDetector] Flagging engine.ts: 112 functions (threshold: 30)
+2025-10-13T21:18:45.785Z [info] [GodObjectDetector] Flagging architecture-analyzer.ts: 65 functions (threshold: 30)
+2025-10-13T21:18:45.785Z [info] [GodObjectDetector] Flagging smell-detector.ts: 44 functions (threshold: 30)
+2025-10-13T21:18:45.786Z [info] [GodObjectDetector] Flagging typescript.ts: 68 functions (threshold: 30)
+2025-10-13T21:18:45.786Z [info] [GodObjectDetector] Skipping types.ts: UI component library with multiple related components
+2025-10-13T21:18:45.786Z [info] [GodObjectDetector] Skipping plugin-manager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.791Z [info] [GodObjectDetector] Skipping file-generator.ts: UI component library with multiple related components
+2025-10-13T21:18:45.791Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.791Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.791Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.792Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.793Z [info] [GodObjectDetector] Flagging dashboard.tsx: 39 functions (threshold: 30)
+2025-10-13T21:18:45.793Z [info] [GodObjectDetector] Flagging intelligence-test.ts: 34 functions (threshold: 30)
+2025-10-13T21:18:45.794Z [info] [GodObjectDetector] Flagging health-predictor.ts: 47 functions (threshold: 30)
+2025-10-13T21:18:45.794Z [info] [GodObjectDetector] Flagging pattern-detector.ts: 55 functions (threshold: 30)
+2025-10-13T21:18:45.795Z [info] [GodObjectDetector] Flagging engine.ts: 112 functions (threshold: 30)
+2025-10-13T21:18:45.795Z [info] [GodObjectDetector] Flagging architecture-analyzer.ts: 65 functions (threshold: 30)
+2025-10-13T21:18:45.795Z [info] [GodObjectDetector] Flagging smell-detector.ts: 44 functions (threshold: 30)
+2025-10-13T21:18:45.796Z [info] [GodObjectDetector] Flagging typescript.ts: 68 functions (threshold: 30)
+2025-10-13T21:18:45.796Z [info] [GodObjectDetector] Skipping types.ts: UI component library with multiple related components
+2025-10-13T21:18:45.796Z [info] [GodObjectDetector] Skipping plugin-manager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.796Z [info] [GodObjectDetector] Skipping file-generator.ts: UI component library with multiple related components
+2025-10-13T21:18:45.797Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.797Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.797Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.798Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.798Z [info] [GodObjectDetector] Skipping auth.router.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.798Z [info] [GodObjectDetector] Skipping document.router.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.798Z [info] [GodObjectDetector] Skipping user.router.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.798Z [info] [GodObjectDetector] Skipping api.test.ts: Generated or tool-specific file
+2025-10-13T21:18:45.799Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.802Z [info] [GodObjectDetector] Skipping ThreadManager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.803Z [info] [GodObjectDetector] Skipping StateManager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.806Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.806Z [info] [GodObjectDetector] Skipping constants.ts: UI component library with multiple related components
+2025-10-13T21:18:45.807Z [info] [GodObjectDetector] Skipping ArtifactStorageManager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.808Z [info] [GodObjectDetector] Flagging dashboard.tsx: 39 functions (threshold: 30)
+2025-10-13T21:18:45.808Z [info] [GodObjectDetector] Flagging intelligence-test.ts: 34 functions (threshold: 30)
+2025-10-13T21:18:45.808Z [info] [GodObjectDetector] Flagging health-predictor.ts: 47 functions (threshold: 30)
+2025-10-13T21:18:45.809Z [info] [GodObjectDetector] Flagging pattern-detector.ts: 55 functions (threshold: 30)
+2025-10-13T21:18:45.809Z [info] [GodObjectDetector] Flagging engine.ts: 112 functions (threshold: 30)
+2025-10-13T21:18:45.810Z [info] [GodObjectDetector] Flagging architecture-analyzer.ts: 65 functions (threshold: 30)
+2025-10-13T21:18:45.810Z [info] [GodObjectDetector] Flagging smell-detector.ts: 44 functions (threshold: 30)
+2025-10-13T21:18:45.811Z [info] [GodObjectDetector] Flagging typescript.ts: 68 functions (threshold: 30)
+2025-10-13T21:18:45.811Z [info] [GodObjectDetector] Skipping types.ts: UI component library with multiple related components
+2025-10-13T21:18:45.812Z [info] [GodObjectDetector] Skipping plugin-manager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.812Z [info] [GodObjectDetector] Skipping file-generator.ts: UI component library with multiple related components
+2025-10-13T21:18:45.812Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.812Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.813Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.813Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.814Z [info] [GodObjectDetector] Flagging dashboard.tsx: 39 functions (threshold: 30)
+2025-10-13T21:18:45.815Z [info] [GodObjectDetector] Flagging intelligence-test.ts: 34 functions (threshold: 30)
+2025-10-13T21:18:45.815Z [info] [GodObjectDetector] Flagging health-predictor.ts: 47 functions (threshold: 30)
+2025-10-13T21:18:45.816Z [info] [GodObjectDetector] Flagging pattern-detector.ts: 55 functions (threshold: 30)
+2025-10-13T21:18:45.816Z [info] [GodObjectDetector] Flagging engine.ts: 112 functions (threshold: 30)
+2025-10-13T21:18:45.817Z [info] [GodObjectDetector] Flagging architecture-analyzer.ts: 65 functions (threshold: 30)
+2025-10-13T21:18:45.817Z [info] [GodObjectDetector] Flagging smell-detector.ts: 44 functions (threshold: 30)
+2025-10-13T21:18:45.818Z [info] [GodObjectDetector] Flagging typescript.ts: 68 functions (threshold: 30)
+2025-10-13T21:18:45.818Z [info] [GodObjectDetector] Skipping types.ts: UI component library with multiple related components
+2025-10-13T21:18:45.818Z [info] [GodObjectDetector] Skipping plugin-manager.ts: Service layer with expected CRUD operations
+2025-10-13T21:18:45.818Z [info] [GodObjectDetector] Skipping file-generator.ts: UI component library with multiple related components
+2025-10-13T21:18:45.819Z [info] [GodObjectDetector] Flagging analyze.ts: 38 functions (threshold: 30)
+2025-10-13T21:18:45.822Z [info] [GodObjectDetector] Skipping index.ts: UI component library with multiple related components
+2025-10-13T21:18:45.822Z [info] [GodObjectDetector] Flagging supabase.ts: 56 functions (threshold: 30)
+2025-10-13T21:18:45.822Z [info] [GodObjectDetector] Flagging api.ts: 58 functions (threshold: 30)
+2025-10-13T21:18:45.822Z [info] [InsightEngine] Running detector 4: R
+2025-10-13T21:18:45.873Z [info] [InsightEngine] Running detector 5: $
+2025-10-13T21:18:45.874Z [info] [InsightEngine] Running detector 6: S
+2025-10-13T21:18:45.874Z [info] [InsightEngine] Detector 1 found 1 insights
+2025-10-13T21:18:45.874Z [info] [InsightEngine] Detector 3 found 3 insights
+2025-10-13T21:18:45.875Z [info] [InsightEngine] Detector 4 found 1 insights
+2025-10-13T21:18:45.875Z [info] [InsightEngine] Detector 5 found 0 insights
+2025-10-13T21:18:45.875Z [info] [InsightEngine] Detector 6 found 1 insights
+2025-10-13T21:18:45.911Z [info] [CodeClassifier] Classified 200 files:
+2025-10-13T21:18:45.911Z [info] Production: 64
+2025-10-13T21:18:45.911Z [info] Test: 125
+2025-10-13T21:18:45.911Z [info] Example: 5
+2025-10-13T21:18:45.911Z [info] Build: 0
+2025-10-13T21:18:45.911Z [info] Config: 6
+2025-10-13T21:18:45.911Z [info] Documentation: 0
+2025-10-13T21:18:45.912Z [info] [SecurityInsightDetector] Smart analysis complete: 0 real issues found (136 test files skipped)
+2025-10-13T21:18:45.912Z [info] [InsightEngine] Detector 2 found 0 insights
+2025-10-13T21:18:45.912Z [info] [InsightEngine] Phase 1 complete: 6 insights from detectors
+2025-10-13T21:18:45.912Z [info] [InsightEngine] Phase 2: Running enhanced quality analysis...
+2025-10-13T21:18:45.913Z [info] [InsightEngine] Running enhanced quality analysis on: .
+2025-10-13T21:18:45.917Z [info] Found 3 TypeScript files to analyze
+2025-10-13T21:18:44.644Z [info] [InsightsAPI] Handler called - method: POST
+2025-10-13T21:18:44.644Z [info] [InsightsAPI] Analyzing project: latest-upload-1760390324459 with team capacity: 80
+2025-10-13T21:18:44.644Z [info] [InsightsAPI] Initializing ActionableInsightEngine with database access...
+2025-10-13T21:18:44.645Z [info] [FileValidator] Initialized with project root:
+2025-10-13T21:18:44.645Z [info] [InsightsAPI] Loading project data from database...
+2025-10-13T21:18:44.645Z [info] [ActionableInsightEngine] Loading project context for ID: latest-upload-1760390324459
+2025-10-13T21:18:45.283Z [info] [ActionableInsightEngine] Loaded 200 total files from database
+2025-10-13T21:18:45.283Z [info] [ActionableInsightEngine] Found 14 files from most recent upload batch
+2025-10-13T21:18:46.789Z [info] Processed 3/3 files
+2025-10-13T21:18:47.107Z [info] Extraction complete: {
+  filesProcessed: 3,
+  functionsExtracted: 24372,
+  typesExtracted: 4515,
+  errors: []
+}
+2025-10-13T21:18:47.111Z [warning] Import parsing may be incomplete for pages/_app.tsx: found 3 potential imports but parsed 2
+2025-10-13T21:18:47.111Z [warning] Import parsing may be incomplete for src/services/missing-file-generator.ts: found 4 potential imports but parsed 3
+2025-10-13T21:18:47.170Z [info] [InsightEngine] Enhanced quality analysis found 6 insights
+2025-10-13T21:18:47.170Z [info] [InsightEngine] Phase 2 complete: 6 quality insights added
+2025-10-13T21:18:47.170Z [info] [InsightEngine] Phase 2.1: Running tRPC route lifecycle analysis...
+2025-10-13T21:18:47.170Z [info] [InsightEngine] Starting tRPC route lifecycle analysis...
+2025-10-13T21:18:47.321Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/register",
+  "lifecycle_name": "register",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.320Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:47.428Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/login",
+  "lifecycle_name": "login",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.427Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:47.527Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/me",
+  "lifecycle_name": "me",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.527Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:47.638Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/create",
+  "lifecycle_name": "create",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.637Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:47.734Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/getById",
+  "lifecycle_name": "getById",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.733Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:47.834Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/list",
+  "lifecycle_name": "list",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.833Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:47.932Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/cancel",
+  "lifecycle_name": "cancel",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:47.931Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.040Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/getProgress",
+  "lifecycle_name": "getProgress",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:48.040Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.148Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/getProfile",
+  "lifecycle_name": "getProfile",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:48.148Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.254Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/updateProfile",
+  "lifecycle_name": "updateProfile",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:48.254Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.352Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/changePassword",
+  "lifecycle_name": "changePassword",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:48.351Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.458Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/updatePreferences",
+  "lifecycle_name": "updatePreferences",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:48.458Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.552Z [info] 📊 CAPTURED LIFECYCLE: {
+  "request_path": "POST /api/trpc//api/trpc/getStatistics",
+  "lifecycle_name": "getStatistics",
+  "framework_type": "trpc",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepName": "Database Query: SELECT",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 294,
+      "lineEnd": 312,
+      "functionName": "getFiles",
+      "operations": [
+        "database_query",
+        "data_transformation"
+      ],
+      "externalCalls": [
+        {
+          "service": "supabase",
+          "method": "from().select().eq()",
+          "table": "codebase_files",
+          "details": {
+            "primaryQuery": "purpose = contextId",
+            "fallbackPatterns": [
+              "ai-first/contextId/%",
+              "%contextId%",
+              "contextId/%"
+            ]
+          }
+        }
+      ],
+      "errorConditions": [
+        {
+          "condition": "database_error",
+          "statusCode": 500,
+          "retryPolicy": "none"
+        }
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Retrieving files for contextId: ${contextId}",
+        "[AI-FIRST DEBUG] Primary query result: ${result}",
+        "[AI-FIRST DEBUG] Using fallback pattern: ${pattern}"
+      ],
+      "metrics": [
+        "query_duration",
+        "rows_returned",
+        "cache_hit_rate"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    },
+    {
+      "stepNumber": 2,
+      "stepName": "Response Transformation",
+      "triggerType": "function_call",
+      "filePath": "server/trpc/routers/ai-first.router.ts",
+      "lineStart": 371,
+      "lineEnd": 378,
+      "functionName": "transformFilesToGeneratedFiles",
+      "operations": [
+        "data_transformation",
+        "serialization"
+      ],
+      "logPatterns": [
+        "[AI-FIRST DEBUG] Returning ${count} files from fallback",
+        "[AI-FIRST DEBUG] Final result: ${result}"
+      ],
+      "metrics": [
+        "transform_duration",
+        "response_size"
+      ],
+      "traceHeaders": [
+        "x-trace-id",
+        "x-request-id"
+      ]
+    }
+  ],
+  "captured_at": "2025-10-13T21:18:48.551Z",
+  "version": "1.0"
+}
+2025-10-13T21:18:48.552Z [info] [InsightEngine] Found 1 route insights
+2025-10-13T21:18:48.552Z [info] [InsightEngine] Converted 1 route insights to actionable format
+2025-10-13T21:18:48.552Z [info] [InsightEngine] Phase 2.1 complete: 1 route insights added
+2025-10-13T21:18:48.552Z [info] [InsightEngine] Phase 2.2: Running tRPC-specific insight detection...
+2025-10-13T21:18:48.552Z [info] [InsightEngine] Starting tRPC-specific pattern analysis...
+2025-10-13T21:18:48.582Z [info] [CodeClassifier] Classified 200 files:
+2025-10-13T21:18:48.582Z [info] Production: 64
+2025-10-13T21:18:48.582Z [info] Test: 125
+2025-10-13T21:18:48.582Z [info] Example: 5
+2025-10-13T21:18:48.582Z [info] Build: 0
+2025-10-13T21:18:48.582Z [info] Config: 6
+2025-10-13T21:18:48.582Z [info] Documentation: 0
+2025-10-13T21:18:48.585Z [info] [InsightEngine] Found 22 tRPC-specific insights
+2025-10-13T21:18:48.585Z [info] [InsightEngine] Phase 2.2 complete: 22 tRPC-specific insights added
+2025-10-13T21:18:48.585Z [info] [InsightEngine] Phase 3.1: Running business context enrichment...
+2025-10-13T21:18:48.585Z [info] [InsightEngine] Starting business context enrichment...
+2025-10-13T21:18:48.816Z [info] [InsightEngine] Business enrichment complete:
+2025-10-13T21:18:48.816Z [info] Domains: 8
+2025-10-13T21:18:48.816Z [info] Layers: 5
+2025-10-13T21:18:48.816Z [info] High-value functions: 0
+2025-10-13T21:18:48.816Z [info] Business entities: 0
+2025-10-13T21:18:48.817Z [info] [InsightEngine] Phase 3.1 complete: 3 business insights added
+2025-10-13T21:18:48.817Z [info] [InsightEngine] Enriching with business context...
+2025-10-13T21:18:48.817Z [info] [InsightEngine] Enriching 38 insights with business context...
+2025-10-13T21:18:49.030Z [info] [InsightEngine] Business context: 8 domains, 5 layers
+2025-10-13T21:18:49.031Z [info] [InsightEngine] Business context enrichment complete
+2025-10-13T21:18:49.031Z [info] [InsightEngine] Calculating priorities...
+2025-10-13T21:18:49.031Z [info] [InsightEngine] Priority calculation complete
+2025-10-13T21:18:49.031Z [info] [InsightEngine] Deduplicating 38 insights...
+2025-10-13T21:18:49.031Z [info] [InsightEngine] Deduplication complete: 19 unique insights
+2025-10-13T21:18:49.031Z [info] [InsightEngine] Phase 5: Deduplicating similar insights...
+2025-10-13T21:18:49.031Z [info] [Deduplicator] Starting deduplication of 19 insights
+2025-10-13T21:18:49.040Z [info] [Deduplicator] Created 16 groups, average size: 1.2
+2025-10-13T21:18:49.040Z [info] [Deduplicator] Reduced 19 insights to 16 (16% reduction)
+2025-10-13T21:18:49.040Z [info] [InsightEngine] Deduplication: 19 → 16 (16% reduction)
+2025-10-13T21:18:49.040Z [info] [InsightEngine] Phase 6: Validating file references...
+2025-10-13T21:18:49.040Z [warning] [FileValidator] Invalid insight "Critical Configuration Files Missing": Evidence references non-existent file: app/layout.ts
+2025-10-13T21:18:49.040Z [warning] [FileValidator] Invalid insight "Complex Route Logic: create": File not found: unknown
+2025-10-13T21:18:49.040Z [warning] [FileValidator] Invalid insight "Optional Configuration Files Missing": File not found: app/globals.css, File not found: postcss.config.js
+2025-10-13T21:18:49.041Z [warning] [InsightEngine] Removed 3 insights with invalid file references
+2025-10-13T21:18:49.041Z [info] File Validation Report
+========================
+Total insights: 16
+Valid insights: 13
+Invalid insights: 3
+Overall confidence: 91%
+
+Validation Statistics:
+----------------------
+Total file paths tracked: 142
+Cache entries: 34
+Project root configured: ✅
+
+Invalid Insights:
+------------------
+• Critical Configuration Files Missing
+  - Evidence references non-existent file: app/layout.ts
+
+• Complex Route Logic: create
+  - File not found: unknown
+
+• Optional Configuration Files Missing
+  - File not found: app/globals.css
+  - File not found: postcss.config.js
+
+💡 Common Solutions:
+--------------------
+• Ensure the project path is correctly set during analysis
+• Check that file patterns match your project structure
+• Verify that referenced files exist in the analyzed directory
+2025-10-13T21:18:49.041Z [info] [InsightEngine] Phase 7: Adding confidence scoring...
+2025-10-13T21:18:49.055Z [warning] [InsightEngine] Filtered out 5 very low confidence insights
+2025-10-13T21:18:49.055Z [info] [InsightEngine] Final result: 8 high-confidence insights
+2025-10-13T21:18:49.055Z [info] [InsightEngine] Average confidence: 76%
+2025-10-13T21:18:49.055Z [info] [ActionableInsightEngine] Generated 8 insights
+2025-10-13T21:18:49.055Z [info] [ActionableInsightEngine] Creating sprint plan...
+2025-10-13T21:18:49.055Z [info] [ActionableInsightEngine] Sprint plan created: 5 items
+2025-10-13T21:18:49.055Z [info] [ActionableInsightEngine] Calculating summary...
+2025-10-13T21:18:49.055Z [info] [ActionableInsightEngine] Summary: {
+  critical: 0,
+  high: 1,
+  medium: 5,
+  low: 2,
+  totalDebtHours: 200,
+  estimatedROI: 10850
+}
+2025-10-13T21:18:49.055Z [info] [ActionableInsightEngine] Returning complete result
+2025-10-13T21:18:49.055Z [info] [InsightsAPI] Analysis complete! Generated 8 insights

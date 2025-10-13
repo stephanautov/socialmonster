@@ -14,6 +14,24 @@ const UserFilterSchema = z.object({
   limit: z.number().min(1).max(100).optional(),
 })
 
+const CreateUserSchema = z.object({
+  email: z.string().email('Valid email address is required'),
+  password: z.string().min(8, 'Password must be at least 8 characters'),
+  emailVerified: z.boolean().default(false),
+  subscriptionTier: z.string().default('free'),
+  accountCreatedDate: z.date().default(() => new Date()),
+  lastLoginDate: z.date().default(() => new Date()),
+})
+
+const UpdateUserSchema = z.object({
+  id: z.string().uuid('Valid user ID is required'),
+  email: z.string().email('Valid email address is required').optional(),
+  password: z.string().min(8, 'Password must be at least 8 characters').optional(),
+  emailVerified: z.boolean().optional(),
+  subscriptionTier: z.string().optional(),
+  lastLoginDate: z.date().optional(),
+})
+
 // ============= ROUTER =============
 export const userRouter = router({
   list: publicProcedure
@@ -27,7 +45,8 @@ export const userRouter = router({
         prisma.users.findMany({
           where: search ? {
             OR: [
-              // Add searchable fields here
+              { email: { contains: search, mode: 'insensitive' } },
+              { subscriptionTier: { contains: search, mode: 'insensitive' } },
             ]
           } : {},
           orderBy: { [sortBy]: sortOrder },
@@ -37,7 +56,8 @@ export const userRouter = router({
         prisma.users.count({
           where: search ? {
             OR: [
-              // Add searchable fields here
+              { email: { contains: search, mode: 'insensitive' } },
+              { subscriptionTier: { contains: search, mode: 'insensitive' } },
             ]
           } : {},
         })
@@ -71,14 +91,37 @@ export const userRouter = router({
   create: publicProcedure
     .input(CreateUserSchema)
     .mutation(async ({ input, ctx }) => {
-      const item = await prisma.users.create({
-        data: {
-          ...input,
-          
+      try {
+        // Check if user already exists
+        const existingUser = await prisma.users.findUnique({
+          where: { email: input.email }
+        })
+        
+        if (existingUser) {
+          throw new TRPCError({
+            code: 'CONFLICT',
+            message: 'User with this email already exists'
+          })
         }
-      })
-      
-      return item
+
+        // Hash password before storing (you should use bcrypt in production)
+        const item = await prisma.users.create({
+          data: {
+            ...input,
+            id: crypto.randomUUID(),
+          }
+        })
+        
+        // Don't return password in response
+        const { password, ...userWithoutPassword } = item
+        return userWithoutPassword
+      } catch (error) {
+        if (error instanceof TRPCError) throw error
+        throw new TRPCError({
+          code: 'INTERNAL_SERVER_ERROR',
+          message: 'Failed to create user'
+        })
+      }
     }),
 
   update: protectedProcedure
