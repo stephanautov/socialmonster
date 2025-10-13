@@ -1,0 +1,4 @@
+// Force analysis refresh
+// Timestamp: 2025-10-13T22:30:00Z
+// This file forces the analysis system to bypass cache
+export const ANALYSIS_REFRESH_TOKEN = "fresh-analysis-20251013-223000";

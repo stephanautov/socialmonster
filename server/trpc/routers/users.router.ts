@@ -138,7 +138,7 @@ export const userRouter = router({
     }),
 
   delete: protectedProcedure
-    .input(z.object({ id: z.uuid() }))
+    .input(z.object({ id: z.string().uuid('Valid user ID is required') }))
     .mutation(async ({ input, ctx }) => {
       await prisma.users.delete({
         where: { id: input.id }

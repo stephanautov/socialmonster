@@ -1,6 +1,7 @@
 import { initTRPC, TRPCError } from '@trpc/server'
 import { type CreateNextContextOptions } from '@trpc/server/adapters/next'
-import { getServerAuthSession } from '@/lib/auth'
+import { getServerAuthSession } from '@/lib/services/auth.service'
+import superjson from 'superjson'
 
 /**
  * 1. CONTEXT
@@ -10,8 +11,10 @@ import { getServerAuthSession } from '@/lib/auth'
  * These allow you to access things when processing a request, like the database, the session, etc.
  */
 
+import { type Session } from '@supabase/auth-helpers-nextjs'
+
 interface CreateContextOptions {
-  session: any | null
+  session: Session | null
 }
 
 /**
@@ -55,7 +58,7 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
  * errors on the backend.
  */
 const t = initTRPC.context<typeof createTRPCContext>().create({
-  transformer: undefined,
+  transformer: superjson,
   errorFormatter({ shape, error }) {
     return {
       ...shape,
@@ -95,8 +98,11 @@ export const publicProcedure = t.procedure
 
 /** Reusable middleware that enforces users are logged in before running the procedure. */
 const enforceUserIsAuthed = t.middleware(({ ctx, next }) => {
-  if (!ctx.session || !ctx.session.user) {
-    throw new TRPCError({ code: 'UNAUTHORIZED' })
+  if (!ctx.session?.user) {
+    throw new TRPCError({ 
+      code: 'UNAUTHORIZED',
+      message: 'Authentication required to access this resource' 
+    })
   }
 
   return next({

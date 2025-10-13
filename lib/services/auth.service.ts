@@ -327,3 +327,24 @@ export class AuthService {
 }
 
 export const authService = new AuthService()
+
+/**
+ * Get server-side authentication session for tRPC context
+ */
+export async function getServerAuthSession(opts: { req: any; res: any }) {
+  try {
+    const result = await authService.getCurrentUser()
+    
+    if (result.success && result.data?.isAuthenticated) {
+      return {
+        user: result.data.user,
+        expires: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString() // 24 hours
+      }
+    }
+    
+    return null
+  } catch (error) {
+    logger.error('getServerAuthSession failed', { error })
+    return null
+  }
+}

@@ -4,7 +4,11 @@
  */
 
 import { ApiResponse, PaginatedResponse, AuthResponse, ValidationErrorResponse } from '@/types/api-responses'
-import { User, CreateUserInput, UpdateUserInput } from '@/types/entities'
+import { 
+  User, CreateUserInput, UpdateUserInput,
+  BrandProject, CreateBrandProjectInput, UpdateBrandProjectInput,
+  ContentPost, CreateContentPostInput, UpdateContentPostInput
+} from '@/types/entities'
 
 export class ApiClient {
   private baseUrl: string
@@ -137,12 +141,12 @@ export class ApiClient {
 
   // ============= BRAND PROJECT METHODS =============
 
-  async getBrandProjects(userId?: string): Promise<PaginatedResponse<any>> {
+  async getBrandProjects(userId?: string): Promise<PaginatedResponse<BrandProject>> {
     const params = userId ? `?userId=${userId}` : ''
     return this.request(`/brand-projects${params}`)
   }
 
-  async createBrandProject(data: any): Promise<ApiResponse<any>> {
+  async createBrandProject(data: CreateBrandProjectInput): Promise<ApiResponse<BrandProject>> {
     return this.request('/brand-projects', {
       method: 'POST',
       body: JSON.stringify(data)
@@ -155,7 +159,7 @@ export class ApiClient {
     userId?: string
     brandProjectId?: string
     status?: string
-  }): Promise<PaginatedResponse<any>> {
+  }): Promise<PaginatedResponse<ContentPost>> {
     const searchParams = new URLSearchParams()
     if (params) {
       Object.entries(params).forEach(([key, value]) => {
@@ -168,7 +172,7 @@ export class ApiClient {
     return this.request(`/content-posts?${searchParams}`)
   }
 
-  async createContentPost(data: any): Promise<ApiResponse<any>> {
+  async createContentPost(data: CreateContentPostInput): Promise<ApiResponse<ContentPost>> {
     return this.request('/content-posts', {
       method: 'POST',
       body: JSON.stringify(data)
@@ -205,7 +209,7 @@ export class ApiClient {
     endDate: string
     metrics: string[]
     granularity?: 'hour' | 'day' | 'week' | 'month'
-  }): Promise<ApiResponse<any>> {
+  }): Promise<ApiResponse<{[key: string]: any}>> {
     const searchParams = new URLSearchParams()
     Object.entries(params).forEach(([key, value]) => {
       if (Array.isArray(value)) {

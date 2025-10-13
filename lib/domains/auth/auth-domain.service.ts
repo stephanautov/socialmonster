@@ -7,6 +7,7 @@
 import { AuthService } from '@/lib/services/auth.service'
 import { logger } from '@/lib/logger'
 import { ApiResponse } from '@/types/api-responses'
+import { riskMonitor } from '@/lib/domains/shared/risk-monitor'
 
 export interface AuthDomainContext {
   userAgent?: string
@@ -42,15 +43,34 @@ export class AuthDomainService {
     password: string,
     context: AuthDomainContext
   ): Promise<ApiResponse> {
+    const startTime = Date.now()
+    
     try {
       // Domain-specific validation
       const validationResult = this.validateAuthAttempt(email, context)
       if (!validationResult.valid) {
+        // Monitor validation failure
+        riskMonitor.monitorAuthOperation(
+          'authenticate_user',
+          false,
+          Date.now() - startTime,
+          email,
+          'Validation failed'
+        )
         return validationResult.response
       }
 
       // Delegate to service layer
       const result = await this.authService.signIn({ email, password })
+      
+      // Monitor the authentication attempt
+      riskMonitor.monitorAuthOperation(
+        'authenticate_user',
+        result.success,
+        Date.now() - startTime,
+        email,
+        result.success ? undefined : result.error?.message
+      )
       
       // Domain-specific post-processing
       if (result.success) {
@@ -62,6 +82,15 @@ export class AuthDomainService {
 
       return result
     } catch (error) {
+      // Monitor critical authentication error
+      riskMonitor.monitorAuthOperation(
+        'authenticate_user',
+        false,
+        Date.now() - startTime,
+        email,
+        error instanceof Error ? error.message : 'Unknown error'
+      )
+      
       logger.error('AuthDomainService.authenticateUser failed', { error, email, context })
       return {
         success: false,
