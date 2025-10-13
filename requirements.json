@@ -1,0 +1,3062 @@
+{
+  "application": {
+    "name": "Generated Application",
+    "description": "{\"type\":\"description\",\"summary\":\"An AI-powered platform that helps businesses create social media content, schedule posts across multiple platforms, and generate professional brand design assets through guided, conversational workflows.\",\"enhanced\":\"This application is an all-in-one AI-powered content creation and brand design platform for startups and businesses. It serves two primary purposes: first, it helps users generate, optimize, and schedule social media content across major platforms including Instagram, TikTok, X (Twitter), LinkedIn, Facebook, and YouTube. Users can create compelling posts, captions, and marketing copy using AI, then schedule them directly to their social accounts from one centralized dashboard. Second, and perhaps most uniquely, it functions as an intelligent brand design studio that transforms detailed company information into professional-grade visual assets.\\n\\nThe brand design workflow is guided and conversational. Users answer a series of thoughtful questions about their company—including company name, mission, the significance behind their brand name, core design personality, target audience, preferred colors, typography preferences, and competitive design inspirations. The AI then processes this rich context to generate comprehensive, cohesive brand assets such as wordmarks, icons, logo variations, and other visual mockups. This ensures that even non-designers can create professional branding that truly reflects their company's identity and story.\\n\\nThe platform is particularly valuable for startups and small businesses that need both consistent social media presence and professional branding but may lack the budget for full-time designers or social media managers. By combining AI-powered content generation with direct social platform integrations and intelligent brand design capabilities, users can establish and maintain a strong, cohesive brand presence across all digital channels from a single application.\",\"original\":\"Users can leverage LLM API integrations to create and optimize content for social media, website, marketing materials, and apps. Leverage social media platform API integrations to schedule social media posts across platforms: instagram, tiktok, x, linkedin, facebook, youtube.\\n\\nSimilarly, the app helps startups design brand assets using LLM API integrations. Users enter their natural language descriptions, and the app generates comprehensive, consistent, killer design assets.\\n\\nApp prompts user for the following information:\\n\\nCompany name Company description Significance of company name Company core design personality Company primary audience Company preferred design color direction Company preferred design typography Design Identity competitive examples Desired Designs Sample user inputs Company name: PapertrAiLs Company description: PapertrAiLs is my brand-new LegalTech company. I need professional-grade design assets that mirror its flagship software platform, also named PapertrAiLs, for automating immigration law workflows that leverage GenAI to produce high-quality immigration applications for a fraction of the typical cost and at 100x the speed. Significance of company name: The name \\\"PapertrAiLs\\\" has layers of significance, from capitalization to multiple meanings. -Capitalization:\\n\\nThe second \\\"A\\\" is capitalized to emphasize \\\"Ai\\\", which stands for two things: Artificial intelligence. Automate immigration. The \\\"L\\\" is capitalized to emphasize \\\"Ls\\\", which stands for Legal software. \\\"Ls\\\" can also be read as \\\"ell ess\\\", which sounds very close to \\\"Ellis\\\" as in \\\"Ellis Island\\\", perhaps the most iconic landmark in the history of global immigration. Together, the capitalized second \\\"A\\\" and the capitalized \\\"L\\\" mutually emphasize each other. The first \\\"P\\\" is capitalized because 1) \\\"papertrAiLs\\\" doesn't look right, 2) it's the first letter of a proper noun and therefore capitalized by default, and 3) when isolated in their natural order, the three capitalized letters spell \\\"PAL\\\". And everybody needs a hiking buddy when you're out on the PapertrAiLs. -Meaning: Evidence: Evidence of transactional activities in the context of proving a legal requirement at trial or in administrative proceedings, such as immigration applications. In immigration, every case is an administrative proceeding purely conducted on paper--a ream or two of paper that gets packaged up and couriered to USCIS. Paper. Mountains of paper that immigration professionals must navigate to lead USCIS to the conclusion that the case should be approved. \\\"Theory of the case\\\": good immigration lawyers cut clear, enticing trails through paper mountains. They tell pretty good stories somewhat based on the evidence. Great immigration lawyers carve irresistible trails that connect the most scenic views via the most interesting terrain. Their narratives highlight the best of the best evidence in thrilling fashion. Once you've been on their papertrail, you'll forget that there were alternatives. Money. Customers will save so much money. They won't be able to fit all the cash in their pockets. Everywhere they go, they'll be leaving PapertrAiLs. Records - a wealth of data from LLM interactions. PapertrAiLs creates records of every prompt, RAG content, response, chat transcripts, and values of many variables for each prompt. -Additional significance: \\\"Paper trail\\\" is a familiar-sounding phrase. It's recognizable. Easy on the ears. Easy to remember. \\\"PapertrAiLs\\\" is a distinctive trademark. It sounds cool. Like, \\\"PapertrAiLs? What's that? It sounds cool. I think I like whatever it is!\\\" Company core design personality: Clean, minimal, elegant, sleek Company primary audience: Immigration paralegals in their 20s Company preferred design color direction: Black, white, Tiffany blue Company preferred design typography: Sleek circular sans Design Identity competitive examples: Ableton, Nike SB Desired Designs: Visual Mockups -- Wordmark, Icon, Logo variations\",\"assumptions\":[\"Users need to authenticate and connect their social media accounts to schedule posts\",\"Users must have active accounts on the social platforms they want to post to\",\"The AI-generated designs are editable or regenerable if users want variations\",\"Users can save and access their brand information and generated assets for future use\",\"The platform stores user projects and allows users to return to edit or expand their work\",\"Social media post scheduling respects each platform's API rate limits and posting rules\",\"Users can preview generated content and designs before finalizing or scheduling\",\"The application requires paid API access to LLM services like OpenAI or Anthropic\",\"Generated brand assets are provided in standard file formats suitable for professional use\",\"Users own the rights to content and designs generated through the platform\",\"The platform supports multiple projects or brands per user account\",\"Content generation respects character limits and format requirements of each social platform\"],\"keyFeatures\":[\"Create and optimize social media content using AI for posts, captions, and marketing copy\",\"Schedule posts across Instagram, TikTok, X (Twitter), LinkedIn, Facebook, and YouTube from one dashboard\",\"Generate professional brand design assets including wordmarks, icons, and logo variations using AI\",\"Answer guided questions about your company to provide context for AI-generated designs\",\"Input detailed brand information including company name significance, design personality, target audience, and color preferences\",\"Specify typography preferences and provide competitive design examples for reference\",\"Receive comprehensive, consistent visual mockups that reflect your brand story and identity\",\"Create content for websites, marketing materials, and mobile apps in addition to social media\",\"View and manage all social media posts in a centralized content calendar\",\"Download and export generated brand assets in various formats\"],\"technicalRequirements\":[\"Integration with OpenAI or similar LLM API for content and design generation\",\"Integration with Instagram API for post scheduling and management\",\"Integration with TikTok API for video content scheduling\",\"Integration with X (Twitter) API for tweet scheduling\",\"Integration with LinkedIn API for professional content posting\",\"Integration with Facebook API for page post scheduling\",\"Integration with YouTube API for video publishing and scheduling\",\"Secure user authentication and account management system\",\"Secure storage and management of social media account credentials and access tokens\",\"Database to store user projects, brand information, and generated assets\",\"File storage system for generated images, logos, and design assets\",\"Content calendar interface for viewing and managing scheduled posts\",\"Form-based workflow for collecting detailed brand information\",\"Image generation or manipulation capabilities for creating visual brand assets\",\"Export functionality for downloading designs in multiple file formats\",\"Rate limiting and queue management for API calls to external services\",\"Error handling for failed social media posts or API connection issues\",\"Preview functionality for content and designs before publishing\",\"Responsive design for access across desktop and mobile devices\",\"Payment processing if the service operates on a subscription or credit-based model\"]}",
+    "category": "business",
+    "complexity": "complex",
+    "version": "1.0.0"
+  },
+  "entities": [
+    {
+      "name": "User",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "User's email address for authentication and communication"
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Hashed password for account security"
+        },
+        {
+          "name": "emailVerified",
+          "type": "boolean",
+          "dbType": "boolean",
+          "required": true,
+          "description": "Whether the user has confirmed their email address"
+        },
+        {
+          "name": "accountCreatedDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the user registered for the platform"
+        },
+        {
+          "name": "subscriptionTier",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "User's current subscription or payment plan level"
+        },
+        {
+          "name": "lastLoginDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "Most recent time the user logged into the platform"
+        }
+      ],
+      "indexes": [],
+      "tableName": "users",
+      "softDelete": false,
+      "description": "A registered user of the platform who creates content and manages brand projects",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "SocialMediaConnection",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the user who owns this connection"
+        },
+        {
+          "name": "platform",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The social media platform name (Instagram, TikTok, X, LinkedIn, Facebook, YouTube)"
+        },
+        {
+          "name": "platformAccountId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The user's account identifier on the social platform"
+        },
+        {
+          "name": "platformUsername",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The user's display name or handle on the social platform"
+        },
+        {
+          "name": "accessToken",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Encrypted OAuth token for API access to the social platform"
+        },
+        {
+          "name": "refreshToken",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Token used to renew expired access tokens"
+        },
+        {
+          "name": "tokenExpiryDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the current access token expires"
+        },
+        {
+          "name": "connectedDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the user authorized this social media connection"
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "dbType": "boolean",
+          "required": true,
+          "description": "Whether the connection is currently valid and operational"
+        },
+        {
+          "name": "lastSyncDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "Most recent time the platform verified the connection status"
+        }
+      ],
+      "indexes": [],
+      "tableName": "socialmediaconnections",
+      "softDelete": false,
+      "description": "A linked social media account that the user has authorized for posting",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "BrandProject",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the user who owns this brand project"
+        },
+        {
+          "name": "projectName",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "User-defined name for this brand project"
+        },
+        {
+          "name": "companyName",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The official name of the company or brand"
+        },
+        {
+          "name": "companyDescription",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Detailed description of the company's mission and purpose"
+        },
+        {
+          "name": "nameSignificance",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Explanation of the meaning and story behind the company name"
+        },
+        {
+          "name": "designPersonality",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Core design characteristics (clean, minimal, bold, elegant, etc.)"
+        },
+        {
+          "name": "targetAudience",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Description of the company's primary customer demographic"
+        },
+        {
+          "name": "colorDirection",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Preferred brand colors and color palette guidance"
+        },
+        {
+          "name": "typographyPreferences",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Desired font styles and typography direction"
+        },
+        {
+          "name": "competitiveExamples",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Examples of other brands or designs that inspire this project"
+        },
+        {
+          "name": "desiredAssetTypes",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "List of design assets requested (wordmark, icon, logo variations, etc.)"
+        },
+        {
+          "name": "createdDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the brand project was initially created"
+        },
+        {
+          "name": "lastModifiedDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "Most recent time the project information was updated"
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "dbType": "boolean",
+          "required": true,
+          "description": "Whether this is a currently active project or archived"
+        }
+      ],
+      "indexes": [],
+      "tableName": "brandprojects",
+      "softDelete": false,
+      "description": "A collection of brand information and generated assets for a specific company or product line",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "BrandAsset",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "brandProjectId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the brand project this asset belongs to"
+        },
+        {
+          "name": "assetType",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Category of asset (wordmark, icon, logo variation, visual mockup, etc.)"
+        },
+        {
+          "name": "assetName",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Descriptive name for this specific asset"
+        },
+        {
+          "name": "fileUrl",
+          "type": "file",
+          "dbType": "varchar",
+          "required": true,
+          "description": "Location of the stored design file"
+        },
+        {
+          "name": "fileFormat",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "File type of the asset (PNG, SVG, JPG, PDF, etc.)"
+        },
+        {
+          "name": "generationPrompt",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The AI prompt used to generate this asset"
+        },
+        {
+          "name": "generatedDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When this asset was created by the AI"
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "dbType": "int",
+          "required": true,
+          "description": "Version number if this asset has been regenerated"
+        },
+        {
+          "name": "isApproved",
+          "type": "boolean",
+          "dbType": "boolean",
+          "required": true,
+          "description": "Whether the user has approved this asset version"
+        },
+        {
+          "name": "parentAssetId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the original asset if this is a variation or regeneration"
+        }
+      ],
+      "indexes": [],
+      "tableName": "brandassets",
+      "softDelete": false,
+      "description": "A generated design file such as a logo, wordmark, icon, or visual mockup",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "ContentPost",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the user who created this content"
+        },
+        {
+          "name": "brandProjectId",
+          "type": "string",
+          "dbType": "text",
+          "required": false,
+          "description": "Reference to the brand project this content is associated with (optional)"
+        },
+        {
+          "name": "contentText",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The main text, caption, or copy of the post"
+        },
+        {
+          "name": "contentTopic",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The topic or description provided for content generation"
+        },
+        {
+          "name": "toneStyle",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The tone or style preferences specified for the content"
+        },
+        {
+          "name": "generationPrompt",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The full prompt sent to the AI for content generation"
+        },
+        {
+          "name": "mediaAttachments",
+          "type": "file",
+          "dbType": "varchar",
+          "required": true,
+          "description": "Images, videos, or other media files attached to the post"
+        },
+        {
+          "name": "createdDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When this content was initially created"
+        },
+        {
+          "name": "lastEditedDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "Most recent time the content was modified"
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Current state of the post (draft, scheduled, published, failed)"
+        },
+        {
+          "name": "wasAiGenerated",
+          "type": "boolean",
+          "dbType": "boolean",
+          "required": true,
+          "description": "Whether this content was created using AI or manually"
+        }
+      ],
+      "indexes": [],
+      "tableName": "contentposts",
+      "softDelete": false,
+      "description": "A piece of social media content that has been created or scheduled for publishing",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "ScheduledPost",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "contentPostId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the content that will be posted"
+        },
+        {
+          "name": "socialMediaConnectionId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the social media account this will be posted to"
+        },
+        {
+          "name": "platform",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The social media platform for this scheduled post"
+        },
+        {
+          "name": "scheduledDateTime",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "The date and time when the post should be published"
+        },
+        {
+          "name": "platformSpecificContent",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Content adapted or customized for this specific platform"
+        },
+        {
+          "name": "publishStatus",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Status of publication (pending, published, failed, cancelled)"
+        },
+        {
+          "name": "publishedDateTime",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "Actual date and time when the post was successfully published"
+        },
+        {
+          "name": "platformPostId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The post ID returned by the social media platform after publishing"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Error details if the post failed to publish"
+        },
+        {
+          "name": "retryCount",
+          "type": "number",
+          "dbType": "int",
+          "required": true,
+          "description": "Number of times the system has attempted to publish this post"
+        }
+      ],
+      "indexes": [],
+      "tableName": "scheduledposts",
+      "softDelete": false,
+      "description": "A content post scheduled to be published to a specific social media platform at a specific time",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "ContentOptimization",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the user who requested the optimization"
+        },
+        {
+          "name": "originalContent",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The original content before optimization"
+        },
+        {
+          "name": "optimizedContent",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The AI-improved version of the content"
+        },
+        {
+          "name": "optimizationType",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Type of optimization requested (improve clarity, make engaging, shorten, adapt for platform, etc.)"
+        },
+        {
+          "name": "targetPlatform",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Specific platform the content was optimized for, if applicable"
+        },
+        {
+          "name": "optimizationPrompt",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The prompt sent to the AI for optimization"
+        },
+        {
+          "name": "optimizedDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the optimization was performed"
+        },
+        {
+          "name": "wasAccepted",
+          "type": "boolean",
+          "dbType": "boolean",
+          "required": true,
+          "description": "Whether the user accepted the optimized version"
+        },
+        {
+          "name": "resultingContentPostId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the content post created from this optimization, if any"
+        }
+      ],
+      "indexes": [],
+      "tableName": "contentoptimizations",
+      "softDelete": false,
+      "description": "A record of content that has been improved or adapted using AI optimization",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "ApiUsage",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the user who triggered this API call"
+        },
+        {
+          "name": "apiProvider",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "The external service called (OpenAI, Instagram, TikTok, etc.)"
+        },
+        {
+          "name": "apiEndpoint",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Specific API endpoint or function used"
+        },
+        {
+          "name": "requestType",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Type of request (content generation, image generation, post publishing, etc.)"
+        },
+        {
+          "name": "tokensUsed",
+          "type": "number",
+          "dbType": "int",
+          "required": true,
+          "description": "Number of AI tokens consumed for LLM requests"
+        },
+        {
+          "name": "requestTimestamp",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the API call was made"
+        },
+        {
+          "name": "responseStatus",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Success or failure status of the API call"
+        },
+        {
+          "name": "costAmount",
+          "type": "number",
+          "dbType": "int",
+          "required": true,
+          "description": "Cost incurred for this API call in currency units"
+        },
+        {
+          "name": "relatedEntityId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the content post, brand asset, or other entity created by this API call"
+        }
+      ],
+      "indexes": [],
+      "tableName": "apiusages",
+      "softDelete": false,
+      "description": "A record of API calls made to external services for billing and rate limiting",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    },
+    {
+      "name": "AssetDownload",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "dbType": "uuid",
+          "required": true,
+          "primaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "userId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the user who downloaded the asset"
+        },
+        {
+          "name": "brandAssetId",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "Reference to the asset that was downloaded"
+        },
+        {
+          "name": "downloadFormat",
+          "type": "string",
+          "dbType": "text",
+          "required": true,
+          "description": "File format requested for download (PNG, SVG, JPG, PDF, etc.)"
+        },
+        {
+          "name": "downloadDate",
+          "type": "date",
+          "dbType": "timestamp",
+          "required": true,
+          "description": "When the download occurred"
+        },
+        {
+          "name": "fileSize",
+          "type": "number",
+          "dbType": "int",
+          "required": true,
+          "description": "Size of the downloaded file in bytes"
+        }
+      ],
+      "indexes": [],
+      "tableName": "assetdownloads",
+      "softDelete": false,
+      "description": "A record of when users download their generated brand assets",
+      "validations": [],
+      "isTimestamped": true,
+      "relationships": []
+    }
+  ],
+  "userFlows": [
+    {
+      "id": "user-onboarding",
+      "name": "User Registration and Social Media Account Connection",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User visits the platform landing page and clicks the sign up button"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User enters their email address, creates a password, and submits the registration form"
+        },
+        {
+          "actor": "System",
+          "order": 3,
+          "description": "System sends a verification email to the user's email address"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User clicks the verification link in their email to confirm their account"
+        },
+        {
+          "actor": "User",
+          "order": 5,
+          "description": "User is redirected to the dashboard and prompted to connect social media accounts"
+        },
+        {
+          "actor": "User",
+          "order": 6,
+          "description": "User selects which social platforms to connect (Instagram, TikTok, X, LinkedIn, Facebook, YouTube)"
+        },
+        {
+          "actor": "User",
+          "order": 7,
+          "description": "User authorizes the platform to access each selected social media account through OAuth"
+        },
+        {
+          "actor": "System",
+          "order": 8,
+          "description": "System stores the access tokens and confirms successful connection"
+        }
+      ],
+      "description": "A new user signs up for the platform and connects their social media accounts to enable post scheduling"
+    },
+    {
+      "id": "create-social-content",
+      "name": "Create and Schedule Social Media Posts",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User navigates to the content creation section from the dashboard"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User selects which social media platforms they want to create content for"
+        },
+        {
+          "actor": "User",
+          "order": 3,
+          "description": "User enters a description or topic for the content they want to create"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User optionally specifies tone, style, or other content preferences"
+        },
+        {
+          "actor": "User",
+          "order": 5,
+          "description": "User clicks the generate button to create AI-powered content"
+        },
+        {
+          "actor": "System",
+          "order": 6,
+          "description": "System sends the prompt to the AI API and generates platform-specific content variations"
+        },
+        {
+          "actor": "User",
+          "order": 7,
+          "description": "User reviews the generated posts, captions, and copy for each platform"
+        },
+        {
+          "actor": "User",
+          "order": 8,
+          "description": "User edits the generated content if needed to refine the messaging"
+        },
+        {
+          "actor": "User",
+          "order": 9,
+          "description": "User selects a date and time to schedule the post for each platform"
+        },
+        {
+          "actor": "User",
+          "order": 10,
+          "description": "User previews how the post will appear on each platform"
+        },
+        {
+          "actor": "User",
+          "order": 11,
+          "description": "User clicks the schedule button to confirm the posts"
+        },
+        {
+          "actor": "System",
+          "order": 12,
+          "description": "System saves the scheduled posts and adds them to the content calendar"
+        },
+        {
+          "actor": "System",
+          "order": 13,
+          "description": "System publishes the posts to the selected platforms at the scheduled times"
+        }
+      ],
+      "description": "User generates AI-powered social media content and schedules it to be published across multiple platforms"
+    },
+    {
+      "id": "manage-content-calendar",
+      "name": "View and Manage Content Calendar",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User navigates to the content calendar section from the dashboard"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User views all scheduled posts displayed in a calendar format organized by date and platform"
+        },
+        {
+          "actor": "User",
+          "order": 3,
+          "description": "User filters the calendar by specific platforms or date ranges if needed"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User clicks on a scheduled post to view its full details"
+        },
+        {
+          "actor": "User",
+          "order": 5,
+          "description": "User chooses to edit the post content, reschedule it to a different time, or delete it"
+        },
+        {
+          "actor": "User",
+          "order": 6,
+          "description": "User saves the changes to the scheduled post"
+        },
+        {
+          "actor": "System",
+          "order": 7,
+          "description": "System updates the post in the calendar and adjusts the publishing schedule"
+        }
+      ],
+      "description": "User views all scheduled social media posts in a calendar view and makes changes as needed"
+    },
+    {
+      "id": "create-brand-assets",
+      "name": "Generate Brand Design Assets Through Guided Workflow",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User navigates to the brand design section from the dashboard"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User clicks the button to start a new brand design project"
+        },
+        {
+          "actor": "System",
+          "order": 3,
+          "description": "System presents the first question asking for the company name"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User enters their company name and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 5,
+          "description": "System asks for a detailed company description and mission"
+        },
+        {
+          "actor": "User",
+          "order": 6,
+          "description": "User provides their company description and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 7,
+          "description": "System asks about the significance and meaning behind the company name"
+        },
+        {
+          "actor": "User",
+          "order": 8,
+          "description": "User explains the story and meaning of their company name and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 9,
+          "description": "System asks about the company's core design personality (e.g., clean, minimal, bold)"
+        },
+        {
+          "actor": "User",
+          "order": 10,
+          "description": "User describes their desired design personality and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 11,
+          "description": "System asks about the company's primary target audience"
+        },
+        {
+          "actor": "User",
+          "order": 12,
+          "description": "User describes their target audience and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 13,
+          "description": "System asks about preferred color direction for the brand"
+        },
+        {
+          "actor": "User",
+          "order": 14,
+          "description": "User specifies their preferred brand colors and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 15,
+          "description": "System asks about typography preferences for the brand"
+        },
+        {
+          "actor": "User",
+          "order": 16,
+          "description": "User describes their typography preferences and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 17,
+          "description": "System asks for examples of competitive brands or design inspirations"
+        },
+        {
+          "actor": "User",
+          "order": 18,
+          "description": "User provides examples of brands they admire and clicks next"
+        },
+        {
+          "actor": "System",
+          "order": 19,
+          "description": "System asks what specific design assets the user needs (wordmark, icon, logo variations, etc.)"
+        },
+        {
+          "actor": "User",
+          "order": 20,
+          "description": "User selects the types of design assets they want generated and clicks generate"
+        },
+        {
+          "actor": "System",
+          "order": 21,
+          "description": "System processes all the information and sends it to the AI API to generate brand assets"
+        },
+        {
+          "actor": "System",
+          "order": 22,
+          "description": "System displays the generated wordmarks, icons, logo variations, and visual mockups"
+        },
+        {
+          "actor": "User",
+          "order": 23,
+          "description": "User reviews the generated brand assets"
+        },
+        {
+          "actor": "User",
+          "order": 24,
+          "description": "User either saves the assets or requests regeneration with adjustments"
+        },
+        {
+          "actor": "System",
+          "order": 25,
+          "description": "System saves the approved brand assets to the user's project"
+        }
+      ],
+      "description": "User answers detailed questions about their company and receives AI-generated professional brand design assets"
+    },
+    {
+      "id": "download-brand-assets",
+      "name": "Export and Download Brand Design Assets",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User navigates to their saved brand design projects"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User selects the brand project containing the assets they want to download"
+        },
+        {
+          "actor": "User",
+          "order": 3,
+          "description": "User views all the generated brand assets for that project"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User selects which specific assets they want to download (logos, icons, wordmarks, etc.)"
+        },
+        {
+          "actor": "User",
+          "order": 5,
+          "description": "User chooses the file formats they need (PNG, SVG, JPG, PDF, etc.)"
+        },
+        {
+          "actor": "User",
+          "order": 6,
+          "description": "User clicks the download button to export the assets"
+        },
+        {
+          "actor": "System",
+          "order": 7,
+          "description": "System packages the selected assets in the chosen formats"
+        },
+        {
+          "actor": "System",
+          "order": 8,
+          "description": "System downloads the files to the user's device"
+        }
+      ],
+      "description": "User downloads their generated brand assets in various file formats for professional use"
+    },
+    {
+      "id": "regenerate-brand-variations",
+      "name": "Request Brand Asset Variations and Refinements",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User views their generated brand assets in a saved project"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User selects a specific asset they want to refine or create variations of"
+        },
+        {
+          "actor": "User",
+          "order": 3,
+          "description": "User clicks the regenerate or create variations button"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User provides feedback or adjustments they want (different colors, style tweaks, etc.)"
+        },
+        {
+          "actor": "User",
+          "order": 5,
+          "description": "User submits the regeneration request"
+        },
+        {
+          "actor": "System",
+          "order": 6,
+          "description": "System sends the updated requirements to the AI API to generate new variations"
+        },
+        {
+          "actor": "System",
+          "order": 7,
+          "description": "System displays the new asset variations alongside the original"
+        },
+        {
+          "actor": "User",
+          "order": 8,
+          "description": "User reviews the variations and selects their preferred version"
+        },
+        {
+          "actor": "User",
+          "order": 9,
+          "description": "User saves the selected variation to their project"
+        },
+        {
+          "actor": "System",
+          "order": 10,
+          "description": "System updates the project with the new asset version"
+        }
+      ],
+      "description": "User requests new variations or refinements of their generated brand assets based on feedback"
+    },
+    {
+      "id": "manage-multiple-brands",
+      "name": "Create and Switch Between Multiple Brand Projects",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User navigates to the projects or brands section from the dashboard"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User views a list of all their existing brand projects"
+        },
+        {
+          "actor": "User",
+          "order": 3,
+          "description": "User clicks the button to create a new brand project"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User enters a name for the new brand project"
+        },
+        {
+          "actor": "System",
+          "order": 5,
+          "description": "System creates the new project and adds it to the user's project list"
+        },
+        {
+          "actor": "User",
+          "order": 6,
+          "description": "User selects which brand project they want to work on"
+        },
+        {
+          "actor": "System",
+          "order": 7,
+          "description": "System loads the selected brand project with all its associated assets and information"
+        },
+        {
+          "actor": "User",
+          "order": 8,
+          "description": "User works on content creation or brand design within the context of that specific brand"
+        },
+        {
+          "actor": "User",
+          "order": 9,
+          "description": "User switches to a different brand project when needed by selecting it from the project list"
+        }
+      ],
+      "description": "User manages multiple brand projects for different companies or product lines within their account"
+    },
+    {
+      "id": "optimize-existing-content",
+      "name": "Optimize and Improve Existing Content with AI",
+      "steps": [
+        {
+          "actor": "User",
+          "order": 1,
+          "description": "User navigates to the content optimization section"
+        },
+        {
+          "actor": "User",
+          "order": 2,
+          "description": "User pastes or types in their existing content that needs improvement"
+        },
+        {
+          "actor": "User",
+          "order": 3,
+          "description": "User selects what type of optimization they want (improve clarity, make more engaging, shorten, adapt for specific platform, etc.)"
+        },
+        {
+          "actor": "User",
+          "order": 4,
+          "description": "User clicks the optimize button"
+        },
+        {
+          "actor": "System",
+          "order": 5,
+          "description": "System sends the content and optimization instructions to the AI API"
+        },
+        {
+          "actor": "System",
+          "order": 6,
+          "description": "System displays the optimized content alongside the original"
+        },
+        {
+          "actor": "User",
+          "order": 7,
+          "description": "User reviews the optimized version and compares it to the original"
+        },
+        {
+          "actor": "User",
+          "order": 8,
+          "description": "User either accepts the optimized version, requests further changes, or keeps the original"
+        },
+        {
+          "actor": "User",
+          "order": 9,
+          "description": "User can then schedule the optimized content to social platforms or save it for later use"
+        }
+      ],
+      "description": "User takes existing content and uses AI to optimize, improve, or adapt it for different platforms"
+    },
+    {
+      "id": "auth-login",
+      "name": "User Login",
+      "description": "Existing user logs in (standard auth flow)",
+      "steps": [
+        {
+          "id": "1",
+          "type": "screen",
+          "name": "Visit Login Page",
+          "description": "User visits login page",
+          "nextSteps": [
+            "2"
+          ]
+        },
+        {
+          "id": "2",
+          "type": "action",
+          "name": "Enter Credentials",
+          "description": "User enters email and password",
+          "nextSteps": [
+            "3"
+          ]
+        },
+        {
+          "id": "3",
+          "type": "action",
+          "name": "Submit Login Form",
+          "description": "System validates credentials",
+          "nextSteps": [
+            "4"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "screen",
+          "name": "Redirect to Dashboard",
+          "description": "User is redirected to dashboard",
+          "nextSteps": []
+        }
+      ],
+      "triggers": [
+        {
+          "type": "user_action"
+        }
+      ],
+      "outcomes": [
+        {
+          "type": "success",
+          "name": "User logged in successfully"
+        }
+      ],
+      "priority": "critical",
+      "authRequired": false
+    },
+    {
+      "id": "auth-register",
+      "name": "User Registration",
+      "description": "New user creates an account (standard auth flow)",
+      "steps": [
+        {
+          "id": "1",
+          "type": "screen",
+          "name": "Visit Registration Page",
+          "description": "User visits registration page",
+          "nextSteps": [
+            "2"
+          ]
+        },
+        {
+          "id": "2",
+          "type": "action",
+          "name": "Enter Registration Details",
+          "description": "User enters email, password, and name",
+          "nextSteps": [
+            "3"
+          ]
+        },
+        {
+          "id": "3",
+          "type": "action",
+          "name": "Submit Registration Form",
+          "description": "System creates account",
+          "nextSteps": [
+            "4"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "screen",
+          "name": "Redirect to Dashboard",
+          "description": "User is redirected to dashboard",
+          "nextSteps": []
+        }
+      ],
+      "triggers": [
+        {
+          "type": "user_action"
+        }
+      ],
+      "outcomes": [
+        {
+          "type": "success",
+          "name": "User registered successfully"
+        }
+      ],
+      "priority": "critical",
+      "authRequired": false
+    }
+  ],
+  "apiEndpoints": [
+    {
+      "router": "auth",
+      "procedure": "getSession",
+      "type": "query",
+      "name": "auth.getSession",
+      "description": "Get current user session (standard auth endpoint)",
+      "authentication": "public",
+      "outputSchema": "{ user: User | null; session: Session | null }"
+    },
+    {
+      "router": "auth",
+      "procedure": "signIn",
+      "type": "mutation",
+      "name": "auth.signIn",
+      "description": "Sign in with email and password (standard auth endpoint)",
+      "authentication": "public",
+      "inputSchema": "SignInSchema",
+      "outputSchema": "{ user: User; session: Session }"
+    },
+    {
+      "router": "auth",
+      "procedure": "signUp",
+      "type": "mutation",
+      "name": "auth.signUp",
+      "description": "Sign up with email and password (standard auth endpoint)",
+      "authentication": "public",
+      "inputSchema": "SignUpSchema",
+      "outputSchema": "{ user: User; session: Session }"
+    },
+    {
+      "router": "auth",
+      "procedure": "signOut",
+      "type": "mutation",
+      "name": "auth.signOut",
+      "description": "Sign out current user (standard auth endpoint)",
+      "authentication": "protected",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "user",
+      "procedure": "list",
+      "type": "query",
+      "name": "user.list",
+      "description": "List all Users",
+      "authentication": "protected",
+      "inputSchema": "ListUserSchema",
+      "outputSchema": "User[]"
+    },
+    {
+      "router": "user",
+      "procedure": "getById",
+      "type": "query",
+      "name": "user.getById",
+      "description": "Get User by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdUserSchema",
+      "outputSchema": "User"
+    },
+    {
+      "router": "user",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "user.create",
+      "description": "Create new User",
+      "authentication": "protected",
+      "inputSchema": "CreateUserSchema",
+      "outputSchema": "User"
+    },
+    {
+      "router": "user",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "user.update",
+      "description": "Update User",
+      "authentication": "protected",
+      "inputSchema": "UpdateUserSchema",
+      "outputSchema": "User"
+    },
+    {
+      "router": "user",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "user.delete",
+      "description": "Delete User",
+      "authentication": "protected",
+      "inputSchema": "DeleteUserSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "socialmediaconnection",
+      "procedure": "list",
+      "type": "query",
+      "name": "socialmediaconnection.list",
+      "description": "List all SocialMediaConnections",
+      "authentication": "protected",
+      "inputSchema": "ListSocialMediaConnectionSchema",
+      "outputSchema": "SocialMediaConnection[]"
+    },
+    {
+      "router": "socialmediaconnection",
+      "procedure": "getById",
+      "type": "query",
+      "name": "socialmediaconnection.getById",
+      "description": "Get SocialMediaConnection by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdSocialMediaConnectionSchema",
+      "outputSchema": "SocialMediaConnection"
+    },
+    {
+      "router": "socialmediaconnection",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "socialmediaconnection.create",
+      "description": "Create new SocialMediaConnection",
+      "authentication": "protected",
+      "inputSchema": "CreateSocialMediaConnectionSchema",
+      "outputSchema": "SocialMediaConnection"
+    },
+    {
+      "router": "socialmediaconnection",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "socialmediaconnection.update",
+      "description": "Update SocialMediaConnection",
+      "authentication": "protected",
+      "inputSchema": "UpdateSocialMediaConnectionSchema",
+      "outputSchema": "SocialMediaConnection"
+    },
+    {
+      "router": "socialmediaconnection",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "socialmediaconnection.delete",
+      "description": "Delete SocialMediaConnection",
+      "authentication": "protected",
+      "inputSchema": "DeleteSocialMediaConnectionSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "brandproject",
+      "procedure": "list",
+      "type": "query",
+      "name": "brandproject.list",
+      "description": "List all BrandProjects",
+      "authentication": "protected",
+      "inputSchema": "ListBrandProjectSchema",
+      "outputSchema": "BrandProject[]"
+    },
+    {
+      "router": "brandproject",
+      "procedure": "getById",
+      "type": "query",
+      "name": "brandproject.getById",
+      "description": "Get BrandProject by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdBrandProjectSchema",
+      "outputSchema": "BrandProject"
+    },
+    {
+      "router": "brandproject",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "brandproject.create",
+      "description": "Create new BrandProject",
+      "authentication": "protected",
+      "inputSchema": "CreateBrandProjectSchema",
+      "outputSchema": "BrandProject"
+    },
+    {
+      "router": "brandproject",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "brandproject.update",
+      "description": "Update BrandProject",
+      "authentication": "protected",
+      "inputSchema": "UpdateBrandProjectSchema",
+      "outputSchema": "BrandProject"
+    },
+    {
+      "router": "brandproject",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "brandproject.delete",
+      "description": "Delete BrandProject",
+      "authentication": "protected",
+      "inputSchema": "DeleteBrandProjectSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "brandasset",
+      "procedure": "list",
+      "type": "query",
+      "name": "brandasset.list",
+      "description": "List all BrandAssets",
+      "authentication": "protected",
+      "inputSchema": "ListBrandAssetSchema",
+      "outputSchema": "BrandAsset[]"
+    },
+    {
+      "router": "brandasset",
+      "procedure": "getById",
+      "type": "query",
+      "name": "brandasset.getById",
+      "description": "Get BrandAsset by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdBrandAssetSchema",
+      "outputSchema": "BrandAsset"
+    },
+    {
+      "router": "brandasset",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "brandasset.create",
+      "description": "Create new BrandAsset",
+      "authentication": "protected",
+      "inputSchema": "CreateBrandAssetSchema",
+      "outputSchema": "BrandAsset"
+    },
+    {
+      "router": "brandasset",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "brandasset.update",
+      "description": "Update BrandAsset",
+      "authentication": "protected",
+      "inputSchema": "UpdateBrandAssetSchema",
+      "outputSchema": "BrandAsset"
+    },
+    {
+      "router": "brandasset",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "brandasset.delete",
+      "description": "Delete BrandAsset",
+      "authentication": "protected",
+      "inputSchema": "DeleteBrandAssetSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "contentpost",
+      "procedure": "list",
+      "type": "query",
+      "name": "contentpost.list",
+      "description": "List all ContentPosts",
+      "authentication": "protected",
+      "inputSchema": "ListContentPostSchema",
+      "outputSchema": "ContentPost[]"
+    },
+    {
+      "router": "contentpost",
+      "procedure": "getById",
+      "type": "query",
+      "name": "contentpost.getById",
+      "description": "Get ContentPost by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdContentPostSchema",
+      "outputSchema": "ContentPost"
+    },
+    {
+      "router": "contentpost",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "contentpost.create",
+      "description": "Create new ContentPost",
+      "authentication": "protected",
+      "inputSchema": "CreateContentPostSchema",
+      "outputSchema": "ContentPost"
+    },
+    {
+      "router": "contentpost",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "contentpost.update",
+      "description": "Update ContentPost",
+      "authentication": "protected",
+      "inputSchema": "UpdateContentPostSchema",
+      "outputSchema": "ContentPost"
+    },
+    {
+      "router": "contentpost",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "contentpost.delete",
+      "description": "Delete ContentPost",
+      "authentication": "protected",
+      "inputSchema": "DeleteContentPostSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "scheduledpost",
+      "procedure": "list",
+      "type": "query",
+      "name": "scheduledpost.list",
+      "description": "List all ScheduledPosts",
+      "authentication": "protected",
+      "inputSchema": "ListScheduledPostSchema",
+      "outputSchema": "ScheduledPost[]"
+    },
+    {
+      "router": "scheduledpost",
+      "procedure": "getById",
+      "type": "query",
+      "name": "scheduledpost.getById",
+      "description": "Get ScheduledPost by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdScheduledPostSchema",
+      "outputSchema": "ScheduledPost"
+    },
+    {
+      "router": "scheduledpost",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "scheduledpost.create",
+      "description": "Create new ScheduledPost",
+      "authentication": "protected",
+      "inputSchema": "CreateScheduledPostSchema",
+      "outputSchema": "ScheduledPost"
+    },
+    {
+      "router": "scheduledpost",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "scheduledpost.update",
+      "description": "Update ScheduledPost",
+      "authentication": "protected",
+      "inputSchema": "UpdateScheduledPostSchema",
+      "outputSchema": "ScheduledPost"
+    },
+    {
+      "router": "scheduledpost",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "scheduledpost.delete",
+      "description": "Delete ScheduledPost",
+      "authentication": "protected",
+      "inputSchema": "DeleteScheduledPostSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "contentoptimization",
+      "procedure": "list",
+      "type": "query",
+      "name": "contentoptimization.list",
+      "description": "List all ContentOptimizations",
+      "authentication": "protected",
+      "inputSchema": "ListContentOptimizationSchema",
+      "outputSchema": "ContentOptimization[]"
+    },
+    {
+      "router": "contentoptimization",
+      "procedure": "getById",
+      "type": "query",
+      "name": "contentoptimization.getById",
+      "description": "Get ContentOptimization by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdContentOptimizationSchema",
+      "outputSchema": "ContentOptimization"
+    },
+    {
+      "router": "contentoptimization",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "contentoptimization.create",
+      "description": "Create new ContentOptimization",
+      "authentication": "protected",
+      "inputSchema": "CreateContentOptimizationSchema",
+      "outputSchema": "ContentOptimization"
+    },
+    {
+      "router": "contentoptimization",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "contentoptimization.update",
+      "description": "Update ContentOptimization",
+      "authentication": "protected",
+      "inputSchema": "UpdateContentOptimizationSchema",
+      "outputSchema": "ContentOptimization"
+    },
+    {
+      "router": "contentoptimization",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "contentoptimization.delete",
+      "description": "Delete ContentOptimization",
+      "authentication": "protected",
+      "inputSchema": "DeleteContentOptimizationSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "apiusage",
+      "procedure": "list",
+      "type": "query",
+      "name": "apiusage.list",
+      "description": "List all ApiUsages",
+      "authentication": "protected",
+      "inputSchema": "ListApiUsageSchema",
+      "outputSchema": "ApiUsage[]"
+    },
+    {
+      "router": "apiusage",
+      "procedure": "getById",
+      "type": "query",
+      "name": "apiusage.getById",
+      "description": "Get ApiUsage by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdApiUsageSchema",
+      "outputSchema": "ApiUsage"
+    },
+    {
+      "router": "apiusage",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "apiusage.create",
+      "description": "Create new ApiUsage",
+      "authentication": "protected",
+      "inputSchema": "CreateApiUsageSchema",
+      "outputSchema": "ApiUsage"
+    },
+    {
+      "router": "apiusage",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "apiusage.update",
+      "description": "Update ApiUsage",
+      "authentication": "protected",
+      "inputSchema": "UpdateApiUsageSchema",
+      "outputSchema": "ApiUsage"
+    },
+    {
+      "router": "apiusage",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "apiusage.delete",
+      "description": "Delete ApiUsage",
+      "authentication": "protected",
+      "inputSchema": "DeleteApiUsageSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "assetdownload",
+      "procedure": "list",
+      "type": "query",
+      "name": "assetdownload.list",
+      "description": "List all AssetDownloads",
+      "authentication": "protected",
+      "inputSchema": "ListAssetDownloadSchema",
+      "outputSchema": "AssetDownload[]"
+    },
+    {
+      "router": "assetdownload",
+      "procedure": "getById",
+      "type": "query",
+      "name": "assetdownload.getById",
+      "description": "Get AssetDownload by ID",
+      "authentication": "protected",
+      "inputSchema": "GetByIdAssetDownloadSchema",
+      "outputSchema": "AssetDownload"
+    },
+    {
+      "router": "assetdownload",
+      "procedure": "create",
+      "type": "mutation",
+      "name": "assetdownload.create",
+      "description": "Create new AssetDownload",
+      "authentication": "protected",
+      "inputSchema": "CreateAssetDownloadSchema",
+      "outputSchema": "AssetDownload"
+    },
+    {
+      "router": "assetdownload",
+      "procedure": "update",
+      "type": "mutation",
+      "name": "assetdownload.update",
+      "description": "Update AssetDownload",
+      "authentication": "protected",
+      "inputSchema": "UpdateAssetDownloadSchema",
+      "outputSchema": "AssetDownload"
+    },
+    {
+      "router": "assetdownload",
+      "procedure": "delete",
+      "type": "mutation",
+      "name": "assetdownload.delete",
+      "description": "Delete AssetDownload",
+      "authentication": "protected",
+      "inputSchema": "DeleteAssetDownloadSchema",
+      "outputSchema": "{ success: boolean }"
+    },
+    {
+      "router": "files",
+      "procedure": "uploadFile",
+      "type": "mutation",
+      "name": "files.uploadFile",
+      "description": "Upload file to storage",
+      "authentication": "protected",
+      "inputSchema": "UploadFileSchema",
+      "outputSchema": "{ url: string; key: string }"
+    }
+  ],
+  "uiComponents": [
+    {
+      "id": "LoginForm",
+      "name": "LoginForm",
+      "type": "component",
+      "description": "User login form (standard auth component)",
+      "props": [
+        {
+          "name": "onSuccess",
+          "type": "() => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "max-w-md mx-auto"
+      }
+    },
+    {
+      "id": "RegisterForm",
+      "name": "RegisterForm",
+      "type": "component",
+      "description": "User registration form (standard auth component)",
+      "props": [
+        {
+          "name": "onSuccess",
+          "type": "() => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "max-w-md mx-auto"
+      }
+    },
+    {
+      "id": "UserForm",
+      "name": "UserForm",
+      "type": "component",
+      "description": "Form for creating/editing User",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "User | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: User) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "UserTable",
+      "name": "UserTable",
+      "type": "component",
+      "description": "Table for displaying User list",
+      "props": [
+        {
+          "name": "data",
+          "type": "User[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: User) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "SocialMediaConnectionForm",
+      "name": "SocialMediaConnectionForm",
+      "type": "component",
+      "description": "Form for creating/editing SocialMediaConnection",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "SocialMediaConnection | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: SocialMediaConnection) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "SocialMediaConnectionTable",
+      "name": "SocialMediaConnectionTable",
+      "type": "component",
+      "description": "Table for displaying SocialMediaConnection list",
+      "props": [
+        {
+          "name": "data",
+          "type": "SocialMediaConnection[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: SocialMediaConnection) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "BrandProjectForm",
+      "name": "BrandProjectForm",
+      "type": "component",
+      "description": "Form for creating/editing BrandProject",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "BrandProject | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: BrandProject) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "BrandProjectTable",
+      "name": "BrandProjectTable",
+      "type": "component",
+      "description": "Table for displaying BrandProject list",
+      "props": [
+        {
+          "name": "data",
+          "type": "BrandProject[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: BrandProject) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "BrandAssetForm",
+      "name": "BrandAssetForm",
+      "type": "component",
+      "description": "Form for creating/editing BrandAsset",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "BrandAsset | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: BrandAsset) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "BrandAssetTable",
+      "name": "BrandAssetTable",
+      "type": "component",
+      "description": "Table for displaying BrandAsset list",
+      "props": [
+        {
+          "name": "data",
+          "type": "BrandAsset[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: BrandAsset) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "ContentPostForm",
+      "name": "ContentPostForm",
+      "type": "component",
+      "description": "Form for creating/editing ContentPost",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "ContentPost | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: ContentPost) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "ContentPostTable",
+      "name": "ContentPostTable",
+      "type": "component",
+      "description": "Table for displaying ContentPost list",
+      "props": [
+        {
+          "name": "data",
+          "type": "ContentPost[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: ContentPost) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "ScheduledPostForm",
+      "name": "ScheduledPostForm",
+      "type": "component",
+      "description": "Form for creating/editing ScheduledPost",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "ScheduledPost | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: ScheduledPost) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "ScheduledPostTable",
+      "name": "ScheduledPostTable",
+      "type": "component",
+      "description": "Table for displaying ScheduledPost list",
+      "props": [
+        {
+          "name": "data",
+          "type": "ScheduledPost[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: ScheduledPost) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "ContentOptimizationForm",
+      "name": "ContentOptimizationForm",
+      "type": "component",
+      "description": "Form for creating/editing ContentOptimization",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "ContentOptimization | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: ContentOptimization) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "ContentOptimizationTable",
+      "name": "ContentOptimizationTable",
+      "type": "component",
+      "description": "Table for displaying ContentOptimization list",
+      "props": [
+        {
+          "name": "data",
+          "type": "ContentOptimization[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: ContentOptimization) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "ApiUsageForm",
+      "name": "ApiUsageForm",
+      "type": "component",
+      "description": "Form for creating/editing ApiUsage",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "ApiUsage | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: ApiUsage) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "ApiUsageTable",
+      "name": "ApiUsageTable",
+      "type": "component",
+      "description": "Table for displaying ApiUsage list",
+      "props": [
+        {
+          "name": "data",
+          "type": "ApiUsage[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: ApiUsage) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    },
+    {
+      "id": "AssetDownloadForm",
+      "name": "AssetDownloadForm",
+      "type": "component",
+      "description": "Form for creating/editing AssetDownload",
+      "props": [
+        {
+          "name": "initialData",
+          "type": "AssetDownload | null",
+          "required": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(data: AssetDownload) => void",
+          "required": true
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "space-y-4"
+      }
+    },
+    {
+      "id": "AssetDownloadTable",
+      "name": "AssetDownloadTable",
+      "type": "component",
+      "description": "Table for displaying AssetDownload list",
+      "props": [
+        {
+          "name": "data",
+          "type": "AssetDownload[]",
+          "required": true
+        },
+        {
+          "name": "onRowClick",
+          "type": "(item: AssetDownload) => void",
+          "required": false
+        }
+      ],
+      "children": [],
+      "styling": {
+        "className": "w-full"
+      }
+    }
+  ],
+  "integrations": [
+    {
+      "id": "openai-ai-content-generation-and-brand-design-creation",
+      "type": "ai",
+      "provider": "OpenAI",
+      "required": true,
+      "configuration": {
+        "reason": "Core functionality of the platform - generates social media content, marketing copy, and brand design assets based on user inputs",
+        "feature": "AI content generation and brand design creation"
+      }
+    },
+    {
+      "id": "instagram-social-media-post-scheduling-and-publishing",
+      "type": "custom",
+      "provider": "Instagram",
+      "required": true,
+      "configuration": {
+        "reason": "One of the primary platforms explicitly mentioned for scheduling and publishing content",
+        "feature": "Social media post scheduling and publishing"
+      }
+    },
+    {
+      "id": "tiktok-social-media-post-scheduling-and-publishing",
+      "type": "custom",
+      "provider": "TikTok",
+      "required": true,
+      "configuration": {
+        "reason": "One of the primary platforms explicitly mentioned for scheduling and publishing content",
+        "feature": "Social media post scheduling and publishing"
+      }
+    },
+    {
+      "id": "x-(twitter)-social-media-post-scheduling-and-publishing",
+      "type": "custom",
+      "provider": "X (Twitter)",
+      "required": true,
+      "configuration": {
+        "reason": "One of the primary platforms explicitly mentioned for scheduling and publishing content",
+        "feature": "Social media post scheduling and publishing"
+      }
+    },
+    {
+      "id": "linkedin-social-media-post-scheduling-and-publishing",
+      "type": "custom",
+      "provider": "LinkedIn",
+      "required": true,
+      "configuration": {
+        "reason": "One of the primary platforms explicitly mentioned for scheduling and publishing content",
+        "feature": "Social media post scheduling and publishing"
+      }
+    },
+    {
+      "id": "facebook-social-media-post-scheduling-and-publishing",
+      "type": "custom",
+      "provider": "Facebook",
+      "required": true,
+      "configuration": {
+        "reason": "One of the primary platforms explicitly mentioned for scheduling and publishing content",
+        "feature": "Social media post scheduling and publishing"
+      }
+    },
+    {
+      "id": "youtube-social-media-post-scheduling-and-publishing",
+      "type": "custom",
+      "provider": "YouTube",
+      "required": true,
+      "configuration": {
+        "reason": "One of the primary platforms explicitly mentioned for scheduling and publishing content",
+        "feature": "Social media post scheduling and publishing"
+      }
+    },
+    {
+      "id": "supabase-auth-user-authentication-and-account-management",
+      "type": "database",
+      "provider": "Supabase Auth",
+      "required": true,
+      "configuration": {
+        "reason": "Required for user registration, login, email verification, and secure access to user accounts and projects",
+        "feature": "User authentication and account management"
+      }
+    },
+    {
+      "id": "supabase-storage-file-storage-for-generated-brand-assets",
+      "type": "database",
+      "provider": "Supabase Storage",
+      "required": true,
+      "configuration": {
+        "reason": "Required to store generated logos, icons, wordmarks, and other design files that users can access and download",
+        "feature": "File storage for generated brand assets"
+      }
+    },
+    {
+      "id": "resend-transactional-email-delivery",
+      "type": "custom",
+      "provider": "Resend",
+      "required": true,
+      "configuration": {
+        "reason": "Required to send account verification emails during user registration workflow",
+        "feature": "Transactional email delivery"
+      }
+    },
+    {
+      "id": "stripe-payment-processing-for-subscriptions-or-credits",
+      "type": "payment",
+      "provider": "Stripe",
+      "required": false,
+      "configuration": {
+        "benefit": "Enables monetization through subscription plans or pay-per-use credits for AI generation",
+        "feature": "Payment processing for subscriptions or credits"
+      }
+    },
+    {
+      "id": "dall-e-or-midjourney-advanced-ai-image-generation-for-visual-brand-assets",
+      "type": "custom",
+      "provider": "DALL-E or Midjourney",
+      "required": false,
+      "configuration": {
+        "benefit": "Enhances brand design capabilities with photorealistic or artistic image generation beyond text-based logos",
+        "feature": "Advanced AI image generation for visual brand assets"
+      }
+    },
+    {
+      "id": "anthropic-claude-alternative-ai-content-generation",
+      "type": "ai",
+      "provider": "Anthropic Claude",
+      "required": false,
+      "configuration": {
+        "benefit": "Provides backup or alternative AI models for content generation with different strengths and pricing",
+        "feature": "Alternative AI content generation"
+      }
+    },
+    {
+      "id": "google-analytics-user-behavior-tracking-and-analytics",
+      "type": "analytics",
+      "provider": "Google Analytics",
+      "required": false,
+      "configuration": {
+        "benefit": "Provides insights into how users interact with the platform to improve features and user experience",
+        "feature": "User behavior tracking and analytics"
+      }
+    },
+    {
+      "id": "sentry-error-tracking-and-monitoring",
+      "type": "custom",
+      "provider": "Sentry",
+      "required": false,
+      "configuration": {
+        "benefit": "Automatically captures and reports errors to help quickly identify and fix issues in production",
+        "feature": "Error tracking and monitoring"
+      }
+    },
+    {
+      "id": "posthog-product-analytics-and-feature-usage-tracking",
+      "type": "custom",
+      "provider": "PostHog",
+      "required": false,
+      "configuration": {
+        "benefit": "Tracks feature adoption, user journeys, and conversion funnels to optimize product development",
+        "feature": "Product analytics and feature usage tracking"
+      }
+    },
+    {
+      "id": "intercom-customer-support-chat-and-messaging",
+      "type": "custom",
+      "provider": "Intercom",
+      "required": false,
+      "configuration": {
+        "benefit": "Enables in-app customer support and onboarding guidance for users creating content and designs",
+        "feature": "Customer support chat and messaging"
+      }
+    },
+    {
+      "id": "unsplash-stock-photo-library-integration",
+      "type": "custom",
+      "provider": "Unsplash",
+      "required": false,
+      "configuration": {
+        "benefit": "Allows users to add professional stock photos to their social media posts without leaving the platform",
+        "feature": "Stock photo library integration"
+      }
+    },
+    {
+      "id": "canva-advanced-design-editing-capabilities",
+      "type": "custom",
+      "provider": "Canva",
+      "required": false,
+      "configuration": {
+        "benefit": "Provides additional design editing tools for users who want to manually refine AI-generated assets",
+        "feature": "Advanced design editing capabilities"
+      }
+    },
+    {
+      "id": "zapier-workflow-automation-and-third-party-integrations",
+      "type": "custom",
+      "provider": "Zapier",
+      "required": false,
+      "configuration": {
+        "benefit": "Allows users to connect the platform with other tools in their marketing stack for automated workflows",
+        "feature": "Workflow automation and third-party integrations"
+      }
+    },
+    {
+      "id": "mixpanel-advanced-user-analytics-and-cohort-analysis",
+      "type": "custom",
+      "provider": "Mixpanel",
+      "required": false,
+      "configuration": {
+        "benefit": "Provides detailed user behavior analysis to understand retention, engagement, and feature usage patterns",
+        "feature": "Advanced user analytics and cohort analysis"
+      }
+    },
+    {
+      "id": "aws-s3-scalable-cloud-storage-for-large-media-files",
+      "type": "storage",
+      "provider": "AWS S3",
+      "required": false,
+      "configuration": {
+        "benefit": "Provides additional storage capacity for high-resolution design assets and video content at scale",
+        "feature": "Scalable cloud storage for large media files"
+      }
+    },
+    {
+      "id": "cloudflare-cdn-and-asset-delivery-optimization",
+      "type": "custom",
+      "provider": "Cloudflare",
+      "required": false,
+      "configuration": {
+        "benefit": "Speeds up delivery of images and design assets to users globally with edge caching",
+        "feature": "CDN and asset delivery optimization"
+      }
+    },
+    {
+      "id": "buffer-or-hootsuite-enhanced-social-media-management-features",
+      "type": "custom",
+      "provider": "Buffer or Hootsuite",
+      "required": false,
+      "configuration": {
+        "benefit": "Provides additional social media analytics, team collaboration, and advanced scheduling capabilities",
+        "feature": "Enhanced social media management features"
+      }
+    },
+    {
+      "id": "supabase-auth",
+      "type": "auth",
+      "provider": "Supabase",
+      "required": true,
+      "configuration": {
+        "url": "process.env.NEXT_PUBLIC_SUPABASE_URL",
+        "anonKey": "process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY"
+      }
+    }
+  ],
+  "constraints": {
+    "technical": {
+      "supportedBrowsers": [
+        "chrome",
+        "firefox",
+        "safari",
+        "edge"
+      ],
+      "mobileSupport": true,
+      "offlineSupport": false
+    },
+    "business": {
+      "maintenanceLevel": "medium"
+    },
+    "compliance": {
+      "gdpr": false,
+      "ccpa": false,
+      "hipaa": false,
+      "pci": false
+    }
+  },
+  "fileStructure": {
+    "package.json": {
+      "type": "file",
+      "purpose": "NPM package configuration",
+      "phase": 3,
+      "generator": "config-generator"
+    },
+    "tsconfig.json": {
+      "type": "file",
+      "purpose": "TypeScript configuration",
+      "phase": 3,
+      "generator": "config-generator"
+    },
+    "next.config.js": {
+      "type": "file",
+      "purpose": "Next.js configuration",
+      "phase": 3,
+      "generator": "config-generator"
+    },
+    "tailwind.config.ts": {
+      "type": "file",
+      "purpose": "Tailwind CSS configuration",
+      "phase": 3,
+      "generator": "config-generator"
+    },
+    ".env.example": {
+      "type": "file",
+      "purpose": "Environment variables template",
+      "phase": 3,
+      "generator": "config-generator"
+    },
+    "app/layout.tsx": {
+      "type": "file",
+      "purpose": "Root layout component",
+      "phase": 2,
+      "generator": "layout-generator"
+    },
+    "app/page.tsx": {
+      "type": "file",
+      "purpose": "Home page",
+      "phase": 2,
+      "generator": "ui-generator"
+    },
+    "server/trpc.ts": {
+      "type": "file",
+      "purpose": "tRPC server configuration (context, router, middleware)",
+      "phase": 1,
+      "generator": "config-generator"
+    },
+    "server/trpc/router.ts": {
+      "type": "file",
+      "purpose": "tRPC root router",
+      "phase": 1,
+      "generator": "api-generator"
+    },
+    "app/api/trpc/[trpc]/route.ts": {
+      "type": "file",
+      "purpose": "tRPC API route handler",
+      "phase": 1,
+      "generator": "api-generator"
+    },
+    "prisma/schema.prisma": {
+      "type": "file",
+      "purpose": "Prisma database schema",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "server/trpc/routers/user.router.ts": {
+      "type": "file",
+      "purpose": "User tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/user.schema.ts": {
+      "type": "file",
+      "purpose": "User validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/users/page.tsx": {
+      "type": "file",
+      "purpose": "User list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/user.router.ts"
+      ]
+    },
+    "app/(protected)/users/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "User detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/user.router.ts"
+      ]
+    },
+    "server/trpc/routers/socialmediaconnection.router.ts": {
+      "type": "file",
+      "purpose": "SocialMediaConnection tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/socialmediaconnection.schema.ts": {
+      "type": "file",
+      "purpose": "SocialMediaConnection validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/socialmediaconnections/page.tsx": {
+      "type": "file",
+      "purpose": "SocialMediaConnection list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/socialmediaconnection.router.ts"
+      ]
+    },
+    "app/(protected)/socialmediaconnections/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "SocialMediaConnection detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/socialmediaconnection.router.ts"
+      ]
+    },
+    "server/trpc/routers/brandproject.router.ts": {
+      "type": "file",
+      "purpose": "BrandProject tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/brandproject.schema.ts": {
+      "type": "file",
+      "purpose": "BrandProject validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/brandprojects/page.tsx": {
+      "type": "file",
+      "purpose": "BrandProject list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/brandproject.router.ts"
+      ]
+    },
+    "app/(protected)/brandprojects/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "BrandProject detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/brandproject.router.ts"
+      ]
+    },
+    "server/trpc/routers/brandasset.router.ts": {
+      "type": "file",
+      "purpose": "BrandAsset tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/brandasset.schema.ts": {
+      "type": "file",
+      "purpose": "BrandAsset validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/brandassets/page.tsx": {
+      "type": "file",
+      "purpose": "BrandAsset list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/brandasset.router.ts"
+      ]
+    },
+    "app/(protected)/brandassets/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "BrandAsset detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/brandasset.router.ts"
+      ]
+    },
+    "server/trpc/routers/contentpost.router.ts": {
+      "type": "file",
+      "purpose": "ContentPost tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/contentpost.schema.ts": {
+      "type": "file",
+      "purpose": "ContentPost validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/contentposts/page.tsx": {
+      "type": "file",
+      "purpose": "ContentPost list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/contentpost.router.ts"
+      ]
+    },
+    "app/(protected)/contentposts/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "ContentPost detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/contentpost.router.ts"
+      ]
+    },
+    "server/trpc/routers/scheduledpost.router.ts": {
+      "type": "file",
+      "purpose": "ScheduledPost tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/scheduledpost.schema.ts": {
+      "type": "file",
+      "purpose": "ScheduledPost validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/scheduledposts/page.tsx": {
+      "type": "file",
+      "purpose": "ScheduledPost list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/scheduledpost.router.ts"
+      ]
+    },
+    "app/(protected)/scheduledposts/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "ScheduledPost detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/scheduledpost.router.ts"
+      ]
+    },
+    "server/trpc/routers/contentoptimization.router.ts": {
+      "type": "file",
+      "purpose": "ContentOptimization tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/contentoptimization.schema.ts": {
+      "type": "file",
+      "purpose": "ContentOptimization validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/contentoptimizations/page.tsx": {
+      "type": "file",
+      "purpose": "ContentOptimization list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/contentoptimization.router.ts"
+      ]
+    },
+    "app/(protected)/contentoptimizations/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "ContentOptimization detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/contentoptimization.router.ts"
+      ]
+    },
+    "server/trpc/routers/apiusage.router.ts": {
+      "type": "file",
+      "purpose": "ApiUsage tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/apiusage.schema.ts": {
+      "type": "file",
+      "purpose": "ApiUsage validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/apiusages/page.tsx": {
+      "type": "file",
+      "purpose": "ApiUsage list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/apiusage.router.ts"
+      ]
+    },
+    "app/(protected)/apiusages/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "ApiUsage detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/apiusage.router.ts"
+      ]
+    },
+    "server/trpc/routers/assetdownload.router.ts": {
+      "type": "file",
+      "purpose": "AssetDownload tRPC router",
+      "phase": 1,
+      "generator": "api-generator",
+      "dependencies": [
+        "server/trpc/context.ts"
+      ]
+    },
+    "server/schemas/assetdownload.schema.ts": {
+      "type": "file",
+      "purpose": "AssetDownload validation schemas",
+      "phase": 1,
+      "generator": "schema-generator"
+    },
+    "app/(protected)/assetdownloads/page.tsx": {
+      "type": "file",
+      "purpose": "AssetDownload list page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/assetdownload.router.ts"
+      ]
+    },
+    "app/(protected)/assetdownloads/[id]/page.tsx": {
+      "type": "file",
+      "purpose": "AssetDownload detail page",
+      "phase": 2,
+      "generator": "ui-generator",
+      "dependencies": [
+        "server/trpc/routers/assetdownload.router.ts"
+      ]
+    },
+    "app/auth/login/page.tsx": {
+      "type": "file",
+      "purpose": "Login page (standard auth page)",
+      "phase": 2,
+      "generator": "ui-generator"
+    },
+    "app/auth/register/page.tsx": {
+      "type": "file",
+      "purpose": "Registration page (standard auth page)",
+      "phase": 2,
+      "generator": "ui-generator"
+    },
+    "lib/auth.ts": {
+      "type": "file",
+      "purpose": "Authentication utilities (standard in canonical stack)",
+      "phase": 1,
+      "generator": "service-generator"
+    },
+    "lib/payment.ts": {
+      "type": "file",
+      "purpose": "Payment service",
+      "phase": 1,
+      "generator": "service-generator"
+    },
+    "app/(protected)/checkout/page.tsx": {
+      "type": "file",
+      "purpose": "Checkout page",
+      "phase": 2,
+      "generator": "ui-generator"
+    },
+    "components/ui/": {
+      "type": "directory",
+      "purpose": "Shared UI components",
+      "phase": 2
+    },
+    "lib/utils.ts": {
+      "type": "file",
+      "purpose": "Utility functions",
+      "phase": 1,
+      "generator": "service-generator"
+    },
+    "lib/trpc.ts": {
+      "type": "file",
+      "purpose": "tRPC client setup",
+      "phase": 1,
+      "generator": "api-generator"
+    }
+  },
+  "dependencies": {
+    "runtime": {
+      "next": "^15.0.0",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0",
+      "@trpc/server": "^11.0.0",
+      "@trpc/client": "^11.0.0",
+      "@trpc/react-query": "^11.0.0",
+      "@trpc/next": "^11.0.0",
+      "@tanstack/react-query": "^5.0.0",
+      "zod": "^4.0.0",
+      "openai": "^4.0.0",
+      "@supabase/supabase-js": "^2.45.0",
+      "@supabase/auth-helpers-nextjs": "^0.10.0",
+      "resend": "^3.0.0",
+      "stripe": "^14.0.0",
+      "@stripe/stripe-js": "^2.0.0",
+      "@anthropic-ai/sdk": "^0.20.0",
+      "posthog-js": "^1.0.0",
+      "mixpanel-browser": "^2.0.0",
+      "@aws-sdk/client-s3": "^3.0.0",
+      "tailwindcss": "^4.0.0",
+      "lucide-react": "^0.400.0"
+    },
+    "development": {
+      "typescript": "^5.9.0",
+      "@types/node": "^22.0.0",
+      "@types/react": "^19.0.0",
+      "@types/react-dom": "^19.0.0"
+    }
+  },
+  "deployment": {
+    "platform": "vercel",
+    "environment": [
+      {
+        "name": "production",
+        "variables": {
+          "NODE_ENV": "production",
+          "NEXT_PUBLIC_SUPABASE_URL": "",
+          "NEXT_PUBLIC_SUPABASE_ANON_KEY": "",
+          "SUPABASE_SERVICE_ROLE": ""
+        }
+      },
+      {
+        "name": "preview",
+        "variables": {
+          "NODE_ENV": "development",
+          "NEXT_PUBLIC_SUPABASE_URL": "",
+          "NEXT_PUBLIC_SUPABASE_ANON_KEY": ""
+        }
+      }
+    ],
+    "buildCommand": "pnpm build",
+    "startCommand": "pnpm start"
+  }
+}

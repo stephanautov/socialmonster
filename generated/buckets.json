@@ -1,0 +1,40 @@
+{
+  "buckets": [
+    {
+      "name": "avatars",
+      "public": false,
+      "fileSizeLimit": 52428800,
+      "allowedMimeTypes": [
+        "image/*",
+        "application/pdf"
+      ]
+    },
+    {
+      "name": "public-assets",
+      "public": true,
+      "fileSizeLimit": 52428800,
+      "allowedMimeTypes": [
+        "image/*",
+        "application/pdf"
+      ]
+    },
+    {
+      "name": "brandassets",
+      "public": false,
+      "fileSizeLimit": 52428800,
+      "allowedMimeTypes": [
+        "image/*",
+        "application/pdf"
+      ]
+    },
+    {
+      "name": "contentposts",
+      "public": false,
+      "fileSizeLimit": 52428800,
+      "allowedMimeTypes": [
+        "image/*",
+        "application/pdf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// ============= ENUMS =============
+
+
+// ============= MODELS =============
+model User {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  email String 
+  password String 
+  emailVerified Boolean 
+  accountCreatedDate DateTime 
+  subscriptionTier String 
+  lastLoginDate DateTime 
+
+  @@map("users")
+}
+
+model SocialMediaConnection {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  userId String 
+  platform String 
+  platformAccountId String 
+  platformUsername String 
+  accessToken String 
+  refreshToken String 
+  tokenExpiryDate DateTime 
+  connectedDate DateTime 
+  isActive Boolean 
+  lastSyncDate DateTime 
+
+  @@map("socialmediaconnections")
+}
+
+model BrandProject {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  userId String 
+  projectName String 
+  companyName String 
+  companyDescription String 
+  nameSignificance String 
+  designPersonality String 
+  targetAudience String 
+  colorDirection String 
+  typographyPreferences String 
+  competitiveExamples String 
+  desiredAssetTypes String 
+  createdDate DateTime 
+  lastModifiedDate DateTime 
+  isActive Boolean 
+
+  @@map("brandprojects")
+}
+
+model BrandAsset {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  brandProjectId String 
+  assetType String 
+  assetName String 
+  fileUrl String 
+  fileFormat String 
+  generationPrompt String 
+  generatedDate DateTime 
+  version Int 
+  isApproved Boolean 
+  parentAssetId String 
+
+  @@map("brandassets")
+}
+
+model ContentPost {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  userId String 
+  brandProjectId String? ?
+  contentText String 
+  contentTopic String 
+  toneStyle String 
+  generationPrompt String 
+  mediaAttachments String 
+  createdDate DateTime 
+  lastEditedDate DateTime 
+  status String 
+  wasAiGenerated Boolean 
+
+  @@map("contentposts")
+}
+
+model ScheduledPost {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  contentPostId String 
+  socialMediaConnectionId String 
+  platform String 
+  scheduledDateTime DateTime 
+  platformSpecificContent String 
+  publishStatus String 
+  publishedDateTime DateTime 
+  platformPostId String 
+  errorMessage String 
+  retryCount Int 
+
+  @@map("scheduledposts")
+}
+
+model ContentOptimization {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  userId String 
+  originalContent String 
+  optimizedContent String 
+  optimizationType String 
+  targetPlatform String 
+  optimizationPrompt String 
+  optimizedDate DateTime 
+  wasAccepted Boolean 
+  resultingContentPostId String 
+
+  @@map("contentoptimizations")
+}
+
+model ApiUsage {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  userId String 
+  apiProvider String 
+  apiEndpoint String 
+  requestType String 
+  tokensUsed Int 
+  requestTimestamp DateTime 
+  responseStatus String 
+  costAmount Int 
+  relatedEntityId String 
+
+  @@map("apiusages")
+}
+
+model AssetDownload {
+  id String @id @default(uuid()) @default("gen_random_uuid()")
+  userId String 
+  brandAssetId String 
+  downloadFormat String 
+  downloadDate DateTime 
+  fileSize Int 
+
+  @@map("assetdownloads")
+}

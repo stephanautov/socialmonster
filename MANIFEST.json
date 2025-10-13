@@ -1,0 +1,1337 @@
+{
+  "generationId": "bb27d51c-41bb-4601-a958-50751b48d57f",
+  "description": "Users can leverage LLM API integrations to create and optimize content for social media, website, marketing materials, and apps. Leverage social media platform API integrations to schedule social media posts across platforms: instagram, tiktok, x, linkedin, facebook, youtube.\n\nSimilarly, the app helps startups design brand assets using LLM API integrations. Users enter their natural language descriptions, and the app generates comprehensive, consistent, killer design assets.\n\nApp prompts user for the following information:\n\nCompany name Company description Significance of company name Company core design personality Company primary audience Company preferred design color direction Company preferred design typography Design Identity competitive examples Desired Designs Sample user inputs Company name: PapertrAiLs Company description: PapertrAiLs is my brand-new LegalTech company. I need professional-grade design assets that mirror its flagship software platform, also named PapertrAiLs, for automating immigration law workflows that leverage GenAI to produce high-quality immigration applications for a fraction of the typical cost and at 100x the speed. Significance of company name: The name \"PapertrAiLs\" has layers of significance, from capitalization to multiple meanings. -Capitalization:\n\nThe second \"A\" is capitalized to emphasize \"Ai\", which stands for two things: Artificial intelligence. Automate immigration. The \"L\" is capitalized to emphasize \"Ls\", which stands for Legal software. \"Ls\" can also be read as \"ell ess\", which sounds very close to \"Ellis\" as in \"Ellis Island\", perhaps the most iconic landmark in the history of global immigration. Together, the capitalized second \"A\" and the capitalized \"L\" mutually emphasize each other. The first \"P\" is capitalized because 1) \"papertrAiLs\" doesn't look right, 2) it's the first letter of a proper noun and therefore capitalized by default, and 3) when isolated in their natural order, the three capitalized letters spell \"PAL\". And everybody needs a hiking buddy when you're out on the PapertrAiLs. -Meaning: Evidence: Evidence of transactional activities in the context of proving a legal requirement at trial or in administrative proceedings, such as immigration applications. In immigration, every case is an administrative proceeding purely conducted on paper--a ream or two of paper that gets packaged up and couriered to USCIS. Paper. Mountains of paper that immigration professionals must navigate to lead USCIS to the conclusion that the case should be approved. \"Theory of the case\": good immigration lawyers cut clear, enticing trails through paper mountains. They tell pretty good stories somewhat based on the evidence. Great immigration lawyers carve irresistible trails that connect the most scenic views via the most interesting terrain. Their narratives highlight the best of the best evidence in thrilling fashion. Once you've been on their papertrail, you'll forget that there were alternatives. Money. Customers will save so much money. They won't be able to fit all the cash in their pockets. Everywhere they go, they'll be leaving PapertrAiLs. Records - a wealth of data from LLM interactions. PapertrAiLs creates records of every prompt, RAG content, response, chat transcripts, and values of many variables for each prompt. -Additional significance: \"Paper trail\" is a familiar-sounding phrase. It's recognizable. Easy on the ears. Easy to remember. \"PapertrAiLs\" is a distinctive trademark. It sounds cool. Like, \"PapertrAiLs? What's that? It sounds cool. I think I like whatever it is!\" Company core design personality: Clean, minimal, elegant, sleek Company primary audience: Immigration paralegals in their 20s Company preferred design color direction: Black, white, Tiffany blue Company preferred design typography: Sleek circular sans Design Identity competitive examples: Ableton, Nike SB Desired Designs: Visual Mockups -- Wordmark, Icon, Logo variations",
+  "createdAt": "2025-10-13T08:45:00.797154+00:00",
+  "completedAt": "2025-10-13T08:53:45.120Z",
+  "status": "validation",
+  "phases": {
+    "1": {
+      "status": "completed",
+      "filesGenerated": 0,
+      "durationMs": 288165,
+      "durationHuman": "4m 48s",
+      "costUsd": 0,
+      "startedAt": "2025-10-13T08:45:07.419+00:00",
+      "completedAt": "2025-10-13T08:49:55.584+00:00"
+    },
+    "2": {
+      "status": "completed",
+      "filesGenerated": 0,
+      "durationMs": 32415,
+      "durationHuman": "32.4s",
+      "costUsd": 0,
+      "startedAt": "2025-10-13T08:50:11.123+00:00",
+      "completedAt": "2025-10-13T08:50:43.538+00:00"
+    },
+    "3": {
+      "status": "completed",
+      "filesGenerated": 34,
+      "durationMs": 63568,
+      "durationHuman": "1m 3s",
+      "costUsd": 0,
+      "startedAt": "2025-10-13T08:50:51.377+00:00",
+      "completedAt": "2025-10-13T08:51:54.945+00:00"
+    },
+    "4": {
+      "status": "completed",
+      "filesGenerated": 0,
+      "durationMs": 40537,
+      "durationHuman": "40.5s",
+      "costUsd": 0,
+      "startedAt": "2025-10-13T08:52:02.701+00:00",
+      "completedAt": "2025-10-13T08:52:43.238+00:00"
+    },
+    "5": {
+      "status": "completed",
+      "filesGenerated": 0,
+      "durationMs": 51109,
+      "durationHuman": "51.1s",
+      "costUsd": 0,
+      "startedAt": "2025-10-13T08:52:54.01+00:00",
+      "completedAt": "2025-10-13T08:53:45.119Z"
+    }
+  },
+  "summary": {
+    "totalFiles": 140,
+    "totalLines": 19455,
+    "totalSizeBytes": 600033,
+    "totalDurationMs": 475794,
+    "totalCostUsd": 0
+  },
+  "fileIndex": [
+    {
+      "path": "1/1/requirements.json",
+      "phase": 1,
+      "generator": "requirements-analyzer",
+      "lines": 3062,
+      "sizeBytes": 100961,
+      "type": "requirements",
+      "language": "json"
+    },
+    {
+      "path": "2/server/trpc/routers/files.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 18,
+      "sizeBytes": 451,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/.env.example",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 15,
+      "sizeBytes": 226,
+      "type": "config",
+      "language": "text"
+    },
+    {
+      "path": "2/lib/db.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 15,
+      "sizeBytes": 372,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/supabase/migrations/20251013085013_initial_schema.sql",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 276,
+      "sizeBytes": 8662,
+      "type": "infrastructure",
+      "language": "text"
+    },
+    {
+      "path": "2/generated/buckets.json",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 40,
+      "sizeBytes": 735,
+      "type": "infrastructure",
+      "language": "json"
+    },
+    {
+      "path": "2/types/api.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 504,
+      "sizeBytes": 13471,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/types/enums.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 30,
+      "sizeBytes": 895,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/alert-dialog.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 140,
+      "sizeBytes": 4439,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/avatar.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 51,
+      "sizeBytes": 1436,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/button.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 57,
+      "sizeBytes": 1918,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/carousel.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 261,
+      "sizeBytes": 6279,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/collapsible.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 12,
+      "sizeBytes": 335,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/context-menu.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 199,
+      "sizeBytes": 7473,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/prisma/schema.prisma",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 151,
+      "sizeBytes": 3273,
+      "type": "infrastructure",
+      "language": "text"
+    },
+    {
+      "path": "2/supabase/seed.sql",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 58,
+      "sizeBytes": 1974,
+      "type": "infrastructure",
+      "language": "text"
+    },
+    {
+      "path": "2/types/entities.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 465,
+      "sizeBytes": 14177,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/types/utils.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 83,
+      "sizeBytes": 2035,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/accordion.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 57,
+      "sizeBytes": 1994,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/aspect-ratio.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 6,
+      "sizeBytes": 143,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/supabase/migrations/20251013085013_foreign_keys.sql",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 4,
+      "sizeBytes": 67,
+      "type": "infrastructure",
+      "language": "text"
+    },
+    {
+      "path": "2/types/index.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 105,
+      "sizeBytes": 1764,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/types/forms.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 170,
+      "sizeBytes": 4455,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/utils.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 34,
+      "sizeBytes": 847,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/alert.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 60,
+      "sizeBytes": 1600,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/badge.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 37,
+      "sizeBytes": 1139,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/calendar.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 214,
+      "sizeBytes": 7598,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/chart.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 364,
+      "sizeBytes": 10555,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/command.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 154,
+      "sizeBytes": 4921,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/dropdown-menu.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 201,
+      "sizeBytes": 7668,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/input-otp.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 74,
+      "sizeBytes": 2248,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/menubar.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 255,
+      "sizeBytes": 8643,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/popover.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 30,
+      "sizeBytes": 1293,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/breadcrumb.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 116,
+      "sizeBytes": 2740,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/card.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 87,
+      "sizeBytes": 1892,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/checkbox.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 29,
+      "sizeBytes": 1068,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/dialog.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 123,
+      "sizeBytes": 3879,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/form.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 178,
+      "sizeBytes": 4150,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/input.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 23,
+      "sizeBytes": 803,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/navigation-menu.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 129,
+      "sizeBytes": 5159,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/progress.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 29,
+      "sizeBytes": 803,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/scroll-area.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 47,
+      "sizeBytes": 1655,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/sheet.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 141,
+      "sizeBytes": 4313,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/slider.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 27,
+      "sizeBytes": 1088,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/drawer.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 117,
+      "sizeBytes": 3034,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/hover-card.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 28,
+      "sizeBytes": 1250,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/label.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 27,
+      "sizeBytes": 738,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/pagination.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 118,
+      "sizeBytes": 2763,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/radio-group.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 43,
+      "sizeBytes": 1483,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/resizable.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 46,
+      "sizeBytes": 1738,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/separator.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 30,
+      "sizeBytes": 769,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/skeleton.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 16,
+      "sizeBytes": 268,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/switch.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 28,
+      "sizeBytes": 1151,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/textarea.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 23,
+      "sizeBytes": 700,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/toggle.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 44,
+      "sizeBytes": 1540,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/logger.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 27,
+      "sizeBytes": 658,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/hooks/use-mobile.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 19,
+      "sizeBytes": 575,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/app/loading.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 7,
+      "sizeBytes": 223,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/base.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 91,
+      "sizeBytes": 2148,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/brandprojects.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 238,
+      "sizeBytes": 6140,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/select.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 161,
+      "sizeBytes": 5775,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/sidebar.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 780,
+      "sizeBytes": 23723,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/sonner.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 32,
+      "sizeBytes": 902,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/tabs.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 54,
+      "sizeBytes": 1901,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/toggle-group.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 62,
+      "sizeBytes": 1758,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/cache.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 30,
+      "sizeBytes": 678,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/hooks/useAuth.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 47,
+      "sizeBytes": 986,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/app/globals.css",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 59,
+      "sizeBytes": 1547,
+      "type": "ui",
+      "language": "text"
+    },
+    {
+      "path": "2/components/ui/table.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 118,
+      "sizeBytes": 2791,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/toast.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 32,
+      "sizeBytes": 912,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/components/ui/tooltip.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 31,
+      "sizeBytes": 1224,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/app/layout.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 24,
+      "sizeBytes": 9850,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "2/app/error.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 34,
+      "sizeBytes": 793,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/users.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 230,
+      "sizeBytes": 5261,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/brandassets.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 233,
+      "sizeBytes": 5693,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/app/not-found.tsx",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 21,
+      "sizeBytes": 621,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/socialmediaconnections.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 233,
+      "sizeBytes": 6099,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/contentposts.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 234,
+      "sizeBytes": 5789,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/apiusages.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 233,
+      "sizeBytes": 5616,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/analytics.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 15,
+      "sizeBytes": 390,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/reporting.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 15,
+      "sizeBytes": 390,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/users.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2654,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/scheduledposts.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 234,
+      "sizeBytes": 5895,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/assetdownloads.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 230,
+      "sizeBytes": 5597,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/integration.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 356,
+      "sizeBytes": 8551,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/socialmediaconnections.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2960,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/contentposts.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2780,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/apiusages.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2726,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/contentoptimizations.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 234,
+      "sizeBytes": 6118,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/lib/services/generic.service.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 15,
+      "sizeBytes": 382,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 39,
+      "sizeBytes": 1392,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/brandprojects.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2798,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/scheduledposts.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2816,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/assetdownloads.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2816,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/brandassets.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2762,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/contentoptimizations.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 108,
+      "sizeBytes": 2924,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/server/trpc/routers/auth.router.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 57,
+      "sizeBytes": 1380,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "2/middleware.ts",
+      "phase": 2,
+      "generator": "infrastructure",
+      "lines": 36,
+      "sizeBytes": 1157,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/app/create-user/page.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 57,
+      "sizeBytes": 1509,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/user/components/UserForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 199,
+      "sizeBytes": 6393,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/user/hooks/useUser.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2217,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/brand-project/components/BrandProjectList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5353,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/app/users/page.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 52,
+      "sizeBytes": 1337,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/social-media-connection/components/SocialMediaConnectionForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 267,
+      "sizeBytes": 8967,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/social-media-connection/hooks/useSocialMediaConnection.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2710,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/brand-project/components/BrandProjectForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 335,
+      "sizeBytes": 11255,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/brand-project/hooks/useBrandProject.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2449,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/brand-asset/components/BrandAssetForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 267,
+      "sizeBytes": 8772,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/brand-asset/components/BrandAssetList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5292,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/app/page.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 137,
+      "sizeBytes": 14126,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "3/app/auth/login/page.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 137,
+      "sizeBytes": 4081,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "3/app/auth/register/page.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 180,
+      "sizeBytes": 5562,
+      "type": "ui",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/user/components/UserList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5156,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/social-media-connection/components/SocialMediaConnectionList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5571,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/brand-asset/hooks/useBrandAsset.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2391,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/content-post/hooks/useContentPost.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2420,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/scheduled-post/hooks/useScheduledPost.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2478,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/content-optimization/hooks/useContentOptimization.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2652,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/api-usage/hooks/useApiUsage.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2333,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/asset-download/hooks/useAssetDownload.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 101,
+      "sizeBytes": 2478,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/content-post/components/ContentPostForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 284,
+      "sizeBytes": 9395,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/scheduled-post/components/ScheduledPostForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 267,
+      "sizeBytes": 8949,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/content-optimization/components/ContentOptimizationForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 250,
+      "sizeBytes": 8431,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/api-usage/components/ApiUsageForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 250,
+      "sizeBytes": 8183,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/asset-download/components/AssetDownloadForm.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 182,
+      "sizeBytes": 5920,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/shared/hooks/useAuth.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 26,
+      "sizeBytes": 467,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/content-post/components/ContentPostList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5324,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/scheduled-post/components/ScheduledPostList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5410,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/content-optimization/components/ContentOptimizationList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5535,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/api-usage/components/ApiUsageList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5243,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/asset-download/components/AssetDownloadList.tsx",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 148,
+      "sizeBytes": 5374,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "3/features/shared/hooks/useDebouncedValue.ts",
+      "phase": 3,
+      "generator": "ui",
+      "lines": 25,
+      "sizeBytes": 513,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "4/tailwind.config.ts",
+      "phase": 4,
+      "generator": "config",
+      "lines": 70,
+      "sizeBytes": 2022,
+      "type": "config",
+      "language": "typescript"
+    },
+    {
+      "path": "4/lib/trpc.tsx",
+      "phase": 4,
+      "generator": "config",
+      "lines": 56,
+      "sizeBytes": 1666,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "4/package.json",
+      "phase": 4,
+      "generator": "config",
+      "lines": 53,
+      "sizeBytes": 1497,
+      "type": "config",
+      "language": "json"
+    },
+    {
+      "path": "4/next.config.js",
+      "phase": 4,
+      "generator": "config",
+      "lines": 29,
+      "sizeBytes": 814,
+      "type": "config",
+      "language": "javascript"
+    },
+    {
+      "path": "4/server/trpc.ts",
+      "phase": 4,
+      "generator": "config",
+      "lines": 118,
+      "sizeBytes": 3400,
+      "type": "infrastructure",
+      "language": "typescript"
+    },
+    {
+      "path": "4/.gitignore",
+      "phase": 4,
+      "generator": "config",
+      "lines": 43,
+      "sizeBytes": 464,
+      "type": "config",
+      "language": "text"
+    },
+    {
+      "path": "4/tsconfig.json",
+      "phase": 4,
+      "generator": "config",
+      "lines": 40,
+      "sizeBytes": 661,
+      "type": "config",
+      "language": "json"
+    },
+    {
+      "path": "4/postcss.config.js",
+      "phase": 4,
+      "generator": "config",
+      "lines": 6,
+      "sizeBytes": 81,
+      "type": "config",
+      "language": "javascript"
+    }
+  ],
+  "validation": {
+    "overall": 0.6799999999999999,
+    "qualityMetrics": {
+      "codeQuality": 0,
+      "architecturalCompliance": 0.97,
+      "typeSystemCompleteness": 0.93,
+      "dependencyHealth": 1,
+      "deploymentReadiness": 0.5
+    },
+    "errorCount": 169,
+    "warningCount": 514,
+    "missingFilesCount": 17,
+    "duplicatesCount": 0
+  }
+}
