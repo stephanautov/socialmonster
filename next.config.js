@@ -6,7 +6,71 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ["@prisma/client"],
     optimizeCss: true, // Enable CSS optimization
-    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
+    optimizePackageImports: [
+      'lucide-react', 
+      '@radix-ui/react-icons',
+      '@anthropic-ai/sdk',
+      'openai',
+      '@supabase/supabase-js'
+    ],
+    turbo: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js',
+        },
+      },
+    },
+  },
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // Optimize bundle splitting
+    if (!isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          framework: {
+            chunks: 'all',
+            name: 'framework',
+            test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
+            priority: 40,
+            enforce: true,
+          },
+          lib: {
+            test(module) {
+              return (
+                module.size() > 160000 &&
+                /node_modules[/\\]/.test(module.identifier())
+              )
+            },
+            name: 'lib',
+            priority: 30,
+            minChunks: 1,
+            reuseExistingChunk: true,
+          },
+          commons: {
+            name: 'commons',
+            minChunks: 2,
+            priority: 20,
+            reuseExistingChunk: true,
+          },
+          shared: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'shared',
+            priority: 10,
+            enforce: true,
+            reuseExistingChunk: true,
+          },
+        },
+      }
+    }
+
+    // Optimize AI package imports
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@ai-libs': false, // Prevent client-side AI library loading
+    }
+
+    return config
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production', // Remove console.log in production

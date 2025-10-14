@@ -7,6 +7,8 @@ import OpenAI from 'openai'
 import { Anthropic } from '@anthropic-ai/sdk'
 import { logger } from '@/lib/logger'
 import { ApiResponse } from '@/types/api-responses'
+import { contentCache, brandAssetCache, ContentCache } from '@/lib/caching/content-cache'
+import { aiProviderManager } from '@/lib/intelligence/ai-provider-manager'
 
 export interface ContentGenerationRequest {
   prompt: string
@@ -71,6 +73,28 @@ export class AIContentService {
 
   async generateContent(request: ContentGenerationRequest): Promise<ApiResponse<GeneratedContent>> {
     try {
+      const cacheKey = ContentCache.getContentKey(request.prompt, {
+        contentType: request.contentType,
+        platform: request.platform,
+        tone: request.tone,
+        maxLength: request.maxLength,
+        brandContext: request.brandContext
+      })
+
+      const cachedContent = contentCache.get<GeneratedContent>(cacheKey)
+      if (cachedContent) {
+        logger.info('AIContentService.generateContent cache hit', { cacheKey })
+        return {
+          success: true,
+          data: cachedContent,
+          metadata: {
+            timestamp: new Date().toISOString(),
+            version: '1.0.0',
+            cached: true
+          }
+        }
+      }
+
       logger.info('AIContentService.generateContent', { 
         contentType: request.contentType,
         platform: request.platform 
@@ -78,45 +102,39 @@ export class AIContentService {
 
       const systemPrompt = this.buildSystemPrompt(request)
       const userPrompt = this.buildUserPrompt(request)
+      const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
 
-      let generatedText: string
+      // Use intelligent provider management
+      const priority = request.contentType === 'brand_copy' ? 'high' : 'normal'
+      const aiResponse = await aiProviderManager.processRequest({
+        type: 'text_generation',
+        prompt: fullPrompt,
+        maxTokens: request.maxLength ? Math.min(request.maxLength * 2, 2000) : 1000,
+        temperature: 0.7,
+        priority,
+        requirements: {
+          minQuality: request.contentType === 'brand_copy' ? 80 : 60,
+          maxLatency: 10000 // 10 seconds max
+        }
+      })
 
-      if (this.openai) {
-        const completion = await this.openai.chat.completions.create({
-          model: 'gpt-4-turbo-preview',
-          messages: [
-            { role: 'system', content: systemPrompt },
-            { role: 'user', content: userPrompt }
-          ],
-          max_tokens: request.maxLength ? Math.min(request.maxLength * 2, 2000) : 1000,
-          temperature: 0.7
-        })
-
-        generatedText = completion.choices[0]?.message?.content || ''
-      } else if (this.anthropic) {
-        const completion = await this.anthropic.messages.create({
-          model: 'claude-3-sonnet-20240229',
-          max_tokens: request.maxLength ? Math.min(request.maxLength * 2, 2000) : 1000,
-          messages: [
-            { role: 'user', content: `${systemPrompt}\n\n${userPrompt}` }
-          ]
-        })
-
-        generatedText = completion.content[0]?.type === 'text' 
-          ? completion.content[0].text 
-          : ''
-      } else {
-        throw new Error('No AI service configured. Please set OPENAI_API_KEY or ANTHROPIC_API_KEY')
-      }
+      const generatedText = aiResponse.content
 
       const result = this.processGeneratedContent(generatedText, request)
+
+      contentCache.set(cacheKey, result)
 
       return {
         success: true,
         data: result,
         metadata: {
           timestamp: new Date().toISOString(),
-          version: '1.0.0'
+          version: '1.0.0',
+          cached: false,
+          aiProvider: aiResponse.provider,
+          aiModel: aiResponse.model,
+          cost: aiResponse.usage.cost,
+          quality: aiResponse.metrics.quality
         }
       }
 
@@ -136,46 +154,72 @@ export class AIContentService {
 
   async generateBrandAssets(request: DesignGenerationRequest): Promise<ApiResponse<any>> {
     try {
+      const cacheKey = ContentCache.getBrandAssetKey(request.companyInfo, request.assetTypes)
+
+      const cachedAssets = brandAssetCache.get(cacheKey)
+      if (cachedAssets) {
+        logger.info('AIContentService.generateBrandAssets cache hit', { cacheKey })
+        return {
+          success: true,
+          data: cachedAssets,
+          metadata: {
+            timestamp: new Date().toISOString(),
+            version: '1.0.0',
+            cached: true
+          }
+        }
+      }
+
       logger.info('AIContentService.generateBrandAssets', { 
         companyName: request.companyInfo.name,
         assetTypes: request.assetTypes 
       })
 
       const designPrompt = this.buildDesignPrompt(request)
+      const systemPrompt = 'You are a professional brand designer. Create detailed design specifications and concepts based on the provided company information.'
 
-      if (!this.openai) {
-        throw new Error('OpenAI API key required for brand asset generation')
-      }
-
-      // Generate design concepts and descriptions
-      const completion = await this.openai.chat.completions.create({
-        model: 'gpt-4-turbo-preview',
-        messages: [
-          { 
-            role: 'system', 
-            content: 'You are a professional brand designer. Create detailed design specifications and concepts based on the provided company information.' 
-          },
-          { role: 'user', content: designPrompt }
-        ],
-        max_tokens: 2000,
-        temperature: 0.8
+      // Use intelligent provider management for design generation
+      const aiResponse = await aiProviderManager.processRequest({
+        type: 'text_generation',
+        prompt: `${systemPrompt}\n\n${designPrompt}`,
+        maxTokens: 2000,
+        temperature: 0.8,
+        priority: 'high', // Brand assets are high priority
+        requirements: {
+          minQuality: 85, // High quality required for brand assets
+          maxLatency: 15000, // 15 seconds max for complex design work
+          requiresReasoning: true
+        }
       })
 
-      const designConcepts = completion.choices[0]?.message?.content || ''
+      const designConcepts = aiResponse.content
+
+      const result = {
+        designConcepts,
+        companyInfo: request.companyInfo,
+        assetTypes: request.assetTypes,
+        generatedAt: new Date().toISOString(),
+        // Note: Actual visual asset generation would require DALL-E or Midjourney integration
+        mockups: request.assetTypes.map(type => ({
+          type,
+          description: `${type} design for ${request.companyInfo.name}`,
+          specifications: designConcepts
+        }))
+      }
+
+      brandAssetCache.set(cacheKey, result)
 
       return {
         success: true,
-        data: {
-          designConcepts,
-          companyInfo: request.companyInfo,
-          assetTypes: request.assetTypes,
-          generatedAt: new Date().toISOString(),
-          // Note: Actual visual asset generation would require DALL-E or Midjourney integration
-          mockups: request.assetTypes.map(type => ({
-            type,
-            description: `${type} design for ${request.companyInfo.name}`,
-            specifications: designConcepts
-          }))
+        data: result,
+        metadata: {
+          timestamp: new Date().toISOString(),
+          version: '1.0.0',
+          cached: false,
+          aiProvider: aiResponse.provider,
+          aiModel: aiResponse.model,
+          cost: aiResponse.usage.cost,
+          quality: aiResponse.metrics.quality
         }
       }
 
