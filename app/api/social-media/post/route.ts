@@ -5,14 +5,19 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    const result = await socialMediaIntegrationService.postToSocialMedia({
+    const postData: any = {
       platform: body.platform,
       content: body.content,
       mediaUrls: body.mediaUrls,
-      scheduledAt: body.scheduledAt ? new Date(body.scheduledAt) : undefined,
       hashtags: body.hashtags,
       connectionId: body.connectionId
-    })
+    }
+    
+    if (body.scheduledAt) {
+      postData.scheduledAt = new Date(body.scheduledAt)
+    }
+
+    const result = await socialMediaIntegrationService.postToSocialMedia(postData)
 
     if (result.success) {
       return NextResponse.json(result, { status: 200 })

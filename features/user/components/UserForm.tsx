@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -57,10 +58,12 @@ export function UserForm({ onSuccess, initialData }: UserFormProps) {
   };
 
   // Form setup
-  const form = React.useForm({
+  const form = useForm({
     defaultValues: initialData || {},
   });
 
+  return (
+    <>
       {/* User Form */}
       <Card>
         <CardHeader>
@@ -195,4 +198,6 @@ export function UserForm({ onSuccess, initialData }: UserFormProps) {
           </Form>
         </CardContent>
       </Card>
+    </>
+  );
 }

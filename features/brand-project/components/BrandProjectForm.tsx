@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -57,11 +58,13 @@ export function BrandProjectForm({ onSuccess, initialData }: BrandProjectFormPro
   };
 
   // Form setup
-  const form = React.useForm({
+  const form = useForm({
     defaultValues: initialData || {},
   });
 
-      {/* BrandProject Form */}
+  return (
+    <>
+      {/* BrandProject Form */
       <Card>
         <CardHeader>
           <CardTitle>{isEditing ? 'Edit' : 'Create'} BrandProject</CardTitle>
@@ -331,4 +334,6 @@ export function BrandProjectForm({ onSuccess, initialData }: BrandProjectFormPro
           </Form>
         </CardContent>
       </Card>
+    </>
+  );
 }
