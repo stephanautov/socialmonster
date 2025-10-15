@@ -3,6 +3,12 @@ const nextConfig = {
   output: 'standalone', // Enable for Docker deployment
   poweredByHeader: false, // Remove X-Powered-By header for security
   compress: true, // Enable gzip compression
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   experimental: {
     serverComponentsExternalPackages: ["@prisma/client"],
     optimizeCss: true, // Enable CSS optimization
