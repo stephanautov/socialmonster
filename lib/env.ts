@@ -13,13 +13,16 @@ const envSchema = z.object({
   // Supabase
   NEXT_PUBLIC_SUPABASE_URL: z.string().url('NEXT_PUBLIC_SUPABASE_URL must be a valid URL'),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1, 'NEXT_PUBLIC_SUPABASE_ANON_KEY is required'),
+  SUPABASE_SERVICE_ROLE_KEY: z.string().min(1, 'SUPABASE_SERVICE_ROLE_KEY is required').optional(),
   
   // API Keys
   OPENAI_API_KEY: z.string().min(1, 'OPENAI_API_KEY is required').optional(),
+  ANTHROPIC_API_KEY: z.string().min(1, 'ANTHROPIC_API_KEY is required').optional(),
   
-  // Storage
-  STORAGE_URL: z.string().url('STORAGE_URL must be a valid URL').optional(),
-  STORAGE_KEY: z.string().min(1, 'STORAGE_KEY is required').optional(),
+  // Storage (Supabase Storage)
+  SUPABASE_STORAGE_URL: z.string().url('SUPABASE_STORAGE_URL must be a valid URL').optional(),
+  SUPABASE_STORAGE_SECRET_KEY: z.string().min(1, 'SUPABASE_STORAGE_SECRET_KEY is required').optional(),
+  SUPABASE_STORAGE_ACCESS_KEY_ID: z.string().min(1, 'SUPABASE_STORAGE_ACCESS_KEY_ID is required').optional(),
   
   // Environment
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
