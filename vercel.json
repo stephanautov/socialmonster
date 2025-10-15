@@ -17,18 +17,6 @@
       "schedule": "0 */6 * * *"
     }
   ],
-  "env": {
-    "DATABASE_URL": "@database_url",
-    "DIRECT_URL": "@direct_url", 
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
-    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
-    "OPENAI_API_KEY": "@openai_api_key",
-    "ANTHROPIC_API_KEY": "@anthropic_api_key",
-    "SUPABASE_STORAGE_URL": "@supabase_storage_url",
-    "SUPABASE_STORAGE_SECRET_KEY": "@supabase_storage_secret_key",
-    "SUPABASE_STORAGE_ACCESS_KEY_ID": "@supabase_storage_access_key_id"
-  },
   "build": {
     "env": {
       "SKIP_ENV_VALIDATION": "true"

@@ -13,7 +13,7 @@ datasource db {
 
 // ============= MODELS =============
 model User {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   email String 
   password String 
   emailVerified Boolean 
@@ -25,7 +25,7 @@ model User {
 }
 
 model SocialMediaConnection {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   userId String 
   platform String 
   platformAccountId String 
@@ -41,7 +41,7 @@ model SocialMediaConnection {
 }
 
 model BrandProject {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   userId String 
   projectName String 
   companyName String 
@@ -61,7 +61,7 @@ model BrandProject {
 }
 
 model BrandAsset {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   brandProjectId String 
   assetType String 
   assetName String 
@@ -77,9 +77,9 @@ model BrandAsset {
 }
 
 model ContentPost {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   userId String 
-  brandProjectId String? ?
+  brandProjectId String?
   contentText String 
   contentTopic String 
   toneStyle String 
@@ -94,7 +94,7 @@ model ContentPost {
 }
 
 model ScheduledPost {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   contentPostId String 
   socialMediaConnectionId String 
   platform String 
@@ -110,7 +110,7 @@ model ScheduledPost {
 }
 
 model ContentOptimization {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   userId String 
   originalContent String 
   optimizedContent String 
@@ -125,7 +125,7 @@ model ContentOptimization {
 }
 
 model ApiUsage {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   userId String 
   apiProvider String 
   apiEndpoint String 
@@ -140,7 +140,7 @@ model ApiUsage {
 }
 
 model AssetDownload {
-  id String @id @default(uuid()) @default("gen_random_uuid()")
+  id String @id @default(uuid())
   userId String 
   brandAssetId String 
   downloadFormat String 
