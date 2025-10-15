@@ -63,7 +63,7 @@ export function BrandProjectForm({ onSuccess, initialData }: BrandProjectFormPro
   });
 
   return (
-    <>
+    <div>
       {/* BrandProject Form */
       <Card>
         <CardHeader>
@@ -334,6 +334,6 @@ export function BrandProjectForm({ onSuccess, initialData }: BrandProjectFormPro
           </Form>
         </CardContent>
       </Card>
-    </>
+    </div>
   );
 }
