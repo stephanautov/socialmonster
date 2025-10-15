@@ -16,7 +16,8 @@
     "docker:build": "docker build -t socialmonster .",
     "docker:run": "docker-compose up -d",
     "docker:stop": "docker-compose down",
-    "deploy": "npm run type-check && npm run build"
+    "deploy": "npm run type-check && npm run build",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "next": "^15.0.0",
@@ -30,6 +31,8 @@
     "@supabase/auth-ui-shared": "^0.1.8",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-label": "^2.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.0.0",
@@ -42,12 +45,14 @@
     "@trpc/client": "^10.45.0",
     "@trpc/react-query": "^10.45.0",
     "@trpc/next": "^10.45.0",
-    "@tanstack/react-query": "^5.8.4",
+    "@tanstack/react-query": "^4.36.1",
     "superjson": "^1.13.1",
     "server-only": "^0.0.1",
     "openai": "^6.3.0",
     "@anthropic-ai/sdk": "^0.65.0",
-    "ai": "^2.2.25"
+    "ai": "^2.2.25",
+    "prisma": "^5.6.0",
+    "@prisma/client": "^5.6.0"
   },
   "devDependencies": {
     "typescript": "^5.2.2",

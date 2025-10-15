@@ -3,7 +3,7 @@
  * Provides lazy loading, memoization, and performance monitoring
  */
 
-import { useCallback, useMemo, useRef, useEffect } from 'react'
+import React, { useCallback, useMemo, useRef, useEffect } from 'react'
 import { logger } from '@/lib/logger'
 
 /**
@@ -112,11 +112,17 @@ export function createLazyComponent<T = any>(
 ) {
   const LazyComponent = React.lazy(importFunction)
 
-  return (props: T) => (
-    <React.Suspense fallback={fallback ? <fallback /> : <div>Loading...</div>}>
-      <LazyComponent {...props} />
-    </React.Suspense>
-  )
+  return (props: T) => {
+    return React.createElement(
+      React.Suspense,
+      { 
+        fallback: fallback 
+          ? React.createElement(fallback) 
+          : React.createElement('div', null, 'Loading...')
+      },
+      React.createElement(LazyComponent, props)
+    )
+  }
 }
 
 /**

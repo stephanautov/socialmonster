@@ -46,14 +46,14 @@ export class IntegrationService extends BaseService {
   /**
    * Integration with X (Twitter)
    */
-  async integrateX(Twitter)(data: any): Promise<ServiceResult<any>> {
+  async integrateXTwitter(data: any): Promise<ServiceResult<any>> {
     try {
       // External integration
       // Implementation would go here
       
       return { success: true, data: null }
     } catch (error) {
-      return this.handleError(error, 'integrateX(Twitter)')
+      return this.handleError(error, 'integrateXTwitter')
     }
   }
 
